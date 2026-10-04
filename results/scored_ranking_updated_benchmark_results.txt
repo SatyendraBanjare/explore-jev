@@ -1,0 +1,818 @@
+task     provider  ok latency_ms  in_tok  out_tok   cost_usd  input                                     answer
+--------------------------------------------------------------------------------------------------------------
+score:degradation_impact__rollback_deploy jev        Y      395.2     743       25   0.000031  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__rollback_deploy': 4.85}
+score:degradation_impact__rollback_deploy claude     N        0.0       0        0   0.000000  service=checkout-api; error=HTTP 5xx 18…  {'error': 'StopIteration: '}
+score:degradation_impact__rollback_deploy jev        Y      280.0     709       25   0.000030  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__rollback_deploy': 4.95}
+score:degradation_impact__rollback_deploy claude     Y     1708.4     573       24   0.001386  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__rollback_deploy': 5.0}
+score:degradation_impact__rollback_deploy jev        Y      287.4     742       25   0.000031  service=recommendations; error=p99 late…  {'degradation_impact__rollback_deploy': 1.07}
+score:degradation_impact__rollback_deploy claude     Y     1467.0     619       22   0.001458  service=recommendations; error=p99 late…  {'degradation_impact__rollback_deploy': 1}
+score:degradation_impact__rollback_deploy jev        Y      329.2     713       25   0.000030  service=orders-db; error=primary health…  {'degradation_impact__rollback_deploy': 1.07}
+score:degradation_impact__rollback_deploy claude     Y     1527.3     583       24   0.001406  service=orders-db; error=primary health…  {'degradation_impact__rollback_deploy': 1.0}
+score:degradation_impact__rollback_deploy jev        N      306.8     717       25   0.000030  service=auth-svc; error=100% of new log…  {'degradation_impact__rollback_deploy': 3.23}
+score:degradation_impact__rollback_deploy claude     Y     2906.8     591      217   0.003352  service=auth-svc; error=100% of new log…  {'degradation_impact__rollback_deploy': 5.0}
+score:degradation_impact__rollback_deploy jev        Y      377.7     753       25   0.000032  service=payments-gateway; error=100% of…  {'degradation_impact__rollback_deploy': 1.01}
+score:degradation_impact__rollback_deploy claude     Y     1528.4     623       24   0.001486  service=payments-gateway; error=100% of…  {'degradation_impact__rollback_deploy': 1.0}
+score:degradation_impact__rollback_deploy jev        Y      416.1     742       25   0.000031  service=api-gateway; error=tenants rece…  {'degradation_impact__rollback_deploy': 1.07}
+score:degradation_impact__rollback_deploy claude     Y     1640.6     617       24   0.001474  service=api-gateway; error=tenants rece…  {'degradation_impact__rollback_deploy': 1.0}
+score:degradation_impact__rollback_deploy jev        Y      379.1     719       25   0.000030  service=inventory-svc; error=stale pric…  {'degradation_impact__rollback_deploy': 2.07}
+score:degradation_impact__rollback_deploy claude     Y     1463.4     591       24   0.001422  service=inventory-svc; error=stale pric…  {'degradation_impact__rollback_deploy': 2.0}
+score:degradation_impact__rollback_deploy jev        N      276.7     740       25   0.000031  service=multiple; error=only pods on no…  {'degradation_impact__rollback_deploy': 1.13}
+score:degradation_impact__rollback_deploy claude     Y     3512.9     622      253   0.003774  service=multiple; error=only pods on no…  {'degradation_impact__rollback_deploy': 1.7}
+score:degradation_impact__rollback_deploy jev        Y      304.2     734       25   0.000031  service=notifications-worker; error=que…  {'degradation_impact__rollback_deploy': 1.03}
+score:degradation_impact__rollback_deploy claude     Y     1414.7     610       24   0.001460  service=notifications-worker; error=que…  {'degradation_impact__rollback_deploy': 1.0}
+score:degradation_impact__restart_pods jev        Y      300.4     717       25   0.000030  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__restart_pods': 1.0}
+score:degradation_impact__restart_pods claude     Y     2793.7     583      232   0.003486  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__restart_pods': 1.0}
+score:degradation_impact__restart_pods jev        Y      343.6     683       25   0.000029  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__restart_pods': 3.97}
+score:degradation_impact__restart_pods claude     Y     1598.3     537       22   0.001294  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__restart_pods': 4.0}
+score:degradation_impact__restart_pods jev        Y      282.7     716       25   0.000030  service=recommendations; error=p99 late…  {'degradation_impact__restart_pods': 0.85}
+score:degradation_impact__restart_pods claude     N     3241.4     583      250   0.003666  service=recommendations; error=p99 late…  {'degradation_impact__restart_pods': 0.3}
+score:degradation_impact__restart_pods jev        Y      265.2     687       25   0.000029  service=orders-db; error=primary health…  {'degradation_impact__restart_pods': 0.8}
+score:degradation_impact__restart_pods claude     N        0.0       0        0   0.000000  service=orders-db; error=primary health…  {'error': 'StopIteration: '}
+score:degradation_impact__restart_pods jev        Y      323.7     691       25   0.000029  service=auth-svc; error=100% of new log…  {'degradation_impact__restart_pods': 4.84}
+score:degradation_impact__restart_pods claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': 'StopIteration: '}
+score:degradation_impact__restart_pods jev        Y      349.8     727       25   0.000031  service=payments-gateway; error=100% of…  {'degradation_impact__restart_pods': 1.0}
+score:degradation_impact__restart_pods claude     Y     2484.2     587      105   0.002224  service=payments-gateway; error=100% of…  {'degradation_impact__restart_pods': 1.0}
+score:degradation_impact__restart_pods jev        Y      281.2     716       25   0.000030  service=api-gateway; error=tenants rece…  {'degradation_impact__restart_pods': 0.52}
+score:degradation_impact__restart_pods claude     N     3302.9     581      222   0.003382  service=api-gateway; error=tenants rece…  {'degradation_impact__restart_pods': 0.3}
+score:degradation_impact__restart_pods jev        Y      505.9     693       25   0.000029  service=inventory-svc; error=stale pric…  {'degradation_impact__restart_pods': 1.19}
+score:degradation_impact__restart_pods claude     N        0.0       0        0   0.000000  service=inventory-svc; error=stale pric…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:degradation_impact__restart_pods jev        N      284.8     714       25   0.000030  service=multiple; error=only pods on no…  {'degradation_impact__restart_pods': 1.29}
+score:degradation_impact__restart_pods claude     Y     1585.7     586       22   0.001392  service=multiple; error=only pods on no…  {'degradation_impact__restart_pods': 2.0}
+score:degradation_impact__restart_pods jev        Y      271.6     708       25   0.000030  service=notifications-worker; error=que…  {'degradation_impact__restart_pods': 0.58}
+score:degradation_impact__restart_pods claude     N        0.0       0        0   0.000000  service=notifications-worker; error=que…  {'error': 'StopIteration: '}
+score:degradation_impact__scale_out jev        Y      437.0     713       24   0.000030  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__scale_out': 1.03}
+score:degradation_impact__scale_out claude     Y     2400.5     601      127   0.002472  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__scale_out': 1.0}
+score:degradation_impact__scale_out jev        Y      466.9     679       24   0.000029  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__scale_out': 1.02}
+score:degradation_impact__scale_out claude     Y     3485.7     555      237   0.003480  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__scale_out': 1.0}
+score:degradation_impact__scale_out jev        Y      277.0     712       24   0.000030  service=recommendations; error=p99 late…  {'degradation_impact__scale_out': 4.83}
+score:degradation_impact__scale_out claude     N        0.0       0        0   0.000000  service=recommendations; error=p99 late…  {'error': 'StopIteration: '}
+score:degradation_impact__scale_out jev        Y      379.8     683       24   0.000029  service=orders-db; error=primary health…  {'degradation_impact__scale_out': 0.43}
+score:degradation_impact__scale_out claude     Y     1844.8     565       21   0.001340  service=orders-db; error=primary health…  {'degradation_impact__scale_out': 0.4}
+score:degradation_impact__scale_out jev        N      273.0     687       24   0.000029  service=auth-svc; error=100% of new log…  {'degradation_impact__scale_out': 1.5}
+score:degradation_impact__scale_out claude     Y     3211.9     573      198   0.003126  service=auth-svc; error=100% of new log…  {'degradation_impact__scale_out': 3.0}
+score:degradation_impact__scale_out jev        Y      288.1     723       24   0.000030  service=payments-gateway; error=100% of…  {'degradation_impact__scale_out': 0.9}
+score:degradation_impact__scale_out claude     Y     1655.6     605       21   0.001420  service=payments-gateway; error=100% of…  {'degradation_impact__scale_out': 1.0}
+score:degradation_impact__scale_out jev        Y      325.2     712       24   0.000030  service=api-gateway; error=tenants rece…  {'degradation_impact__scale_out': 1.53}
+score:degradation_impact__scale_out claude     N        0.0       0        0   0.000000  service=api-gateway; error=tenants rece…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:degradation_impact__scale_out jev        Y      344.0     689       24   0.000029  service=inventory-svc; error=stale pric…  {'degradation_impact__scale_out': 1.02}
+score:degradation_impact__scale_out claude     Y     1557.3     573       21   0.001356  service=inventory-svc; error=stale pric…  {'degradation_impact__scale_out': 1.0}
+score:degradation_impact__scale_out jev        N      385.8     710       24   0.000030  service=multiple; error=only pods on no…  {'degradation_impact__scale_out': 1.21}
+score:degradation_impact__scale_out claude     Y     1744.8     604       21   0.001418  service=multiple; error=only pods on no…  {'degradation_impact__scale_out': 2.0}
+score:degradation_impact__scale_out jev        N      406.7     704       24   0.000030  service=notifications-worker; error=que…  {'degradation_impact__scale_out': 2.81}
+score:degradation_impact__scale_out claude     Y     2154.4     592      124   0.002424  service=notifications-worker; error=que…  {'degradation_impact__scale_out': 2.0}
+score:degradation_impact__increase_resource_limits jev        Y      303.4     715       25   0.000030  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits claude     Y     2807.3     599      208   0.003278  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits jev        Y      468.1     681       25   0.000029  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__increase_resource_limits': 3.71}
+score:degradation_impact__increase_resource_limits claude     N        0.0       0        0   0.000000  service=search-svc; error=5xx 6%; pods …  {'error': 'StopIteration: '}
+score:degradation_impact__increase_resource_limits jev        N      368.3     714       25   0.000030  service=recommendations; error=p99 late…  {'degradation_impact__increase_resource_limits': 2.26}
+score:degradation_impact__increase_resource_limits claude     N        0.0       0        0   0.000000  service=recommendations; error=p99 late…  {'error': 'StopIteration: '}
+score:degradation_impact__increase_resource_limits jev        Y      267.2     685       25   0.000029  service=orders-db; error=primary health…  {'degradation_impact__increase_resource_limits': 0.99}
+score:degradation_impact__increase_resource_limits claude     Y     1647.0     563       25   0.001376  service=orders-db; error=primary health…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits jev        Y      340.6     689       25   0.000029  service=auth-svc; error=100% of new log…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits claude     Y     1807.7     571       25   0.001392  service=auth-svc; error=100% of new log…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits jev        Y      276.3     725       25   0.000030  service=payments-gateway; error=100% of…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits claude     Y     1640.4     603       25   0.001456  service=payments-gateway; error=100% of…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits jev        Y      332.2     714       25   0.000030  service=api-gateway; error=tenants rece…  {'degradation_impact__increase_resource_limits': 1.77}
+score:degradation_impact__increase_resource_limits claude     N        0.0       0        0   0.000000  service=api-gateway; error=tenants rece…  {'error': 'JSONDecodeError: Unterminated string starting at: line 1 column 2 (char 1)'}
+score:degradation_impact__increase_resource_limits jev        Y      341.8     691       25   0.000029  service=inventory-svc; error=stale pric…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits claude     Y     1806.0     571       25   0.001392  service=inventory-svc; error=stale pric…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits jev        Y      279.6     712       25   0.000030  service=multiple; error=only pods on no…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits claude     Y     2912.0     602      189   0.003094  service=multiple; error=only pods on no…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__increase_resource_limits jev        Y      318.1     706       25   0.000030  service=notifications-worker; error=que…  {'degradation_impact__increase_resource_limits': 1.01}
+score:degradation_impact__increase_resource_limits claude     Y     2791.3     590      190   0.003080  service=notifications-worker; error=que…  {'degradation_impact__increase_resource_limits': 1.0}
+score:degradation_impact__failover_db jev        Y      274.4     652       26   0.000027  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1513.5     487       21   0.001184  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db jev        Y      345.3     618       26   0.000026  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1557.7     441       21   0.001092  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db jev        Y      345.8     651       26   0.000027  service=recommendations; error=p99 late…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1549.0     487       21   0.001184  service=recommendations; error=p99 late…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db jev        Y      396.9     622       26   0.000026  service=orders-db; error=primary health…  {'degradation_impact__failover_db': 4.84}
+score:degradation_impact__failover_db claude     Y     1539.6     451       21   0.001112  service=orders-db; error=primary health…  {'degradation_impact__failover_db': 4.8}
+score:degradation_impact__failover_db jev        Y      508.4     626       26   0.000026  service=auth-svc; error=100% of new log…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1842.8     459       21   0.001128  service=auth-svc; error=100% of new log…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db jev        Y      311.3     662       26   0.000028  service=payments-gateway; error=100% of…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1532.5     491       21   0.001192  service=payments-gateway; error=100% of…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db jev        Y      408.3     651       26   0.000027  service=api-gateway; error=tenants rece…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1537.3     485       21   0.001180  service=api-gateway; error=tenants rece…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db jev        Y      407.6     628       26   0.000026  service=inventory-svc; error=stale pric…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1537.5     459       21   0.001128  service=inventory-svc; error=stale pric…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db jev        Y      407.7     649       26   0.000027  service=multiple; error=only pods on no…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1575.1     490       21   0.001190  service=multiple; error=only pods on no…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db jev        Y      471.5     643       26   0.000027  service=notifications-worker; error=que…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__failover_db claude     Y     1426.7     478       21   0.001166  service=notifications-worker; error=que…  {'degradation_impact__failover_db': 1.0}
+score:degradation_impact__clear_cache jev        Y      345.8     714       24   0.000030  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache claude     Y     2430.5     597      135   0.002544  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache jev        Y      341.2     680       24   0.000029  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__clear_cache': 1.01}
+score:degradation_impact__clear_cache claude     Y     2627.7     551      154   0.002642  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache jev        Y      379.9     713       24   0.000030  service=recommendations; error=p99 late…  {'degradation_impact__clear_cache': 0.27}
+score:degradation_impact__clear_cache claude     Y     1539.7     597       22   0.001414  service=recommendations; error=p99 late…  {'degradation_impact__clear_cache': 0.2}
+score:degradation_impact__clear_cache jev        N      329.0     684       24   0.000029  service=orders-db; error=primary health…  {'degradation_impact__clear_cache': 0.99}
+score:degradation_impact__clear_cache claude     N     3281.2     561      217   0.003292  service=orders-db; error=primary health…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache jev        N      404.0     688       24   0.000029  service=auth-svc; error=100% of new log…  {'degradation_impact__clear_cache': 0.83}
+score:degradation_impact__clear_cache claude     Y     3073.7     569      208   0.003218  service=auth-svc; error=100% of new log…  {'degradation_impact__clear_cache': 0.3}
+score:degradation_impact__clear_cache jev        Y      405.2     724       24   0.000030  service=payments-gateway; error=100% of…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache claude     Y     1844.3     601       22   0.001422  service=payments-gateway; error=100% of…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache jev        Y      447.9     713       24   0.000030  service=api-gateway; error=tenants rece…  {'degradation_impact__clear_cache': 0.99}
+score:degradation_impact__clear_cache claude     Y     2346.4     595      136   0.002550  service=api-gateway; error=tenants rece…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache jev        Y      381.0     690       24   0.000029  service=inventory-svc; error=stale pric…  {'degradation_impact__clear_cache': 3.92}
+score:degradation_impact__clear_cache claude     Y     1687.7     569       22   0.001358  service=inventory-svc; error=stale pric…  {'degradation_impact__clear_cache': 4.0}
+score:degradation_impact__clear_cache jev        Y      359.6     711       24   0.000030  service=multiple; error=only pods on no…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache claude     Y     1537.5     600       22   0.001420  service=multiple; error=only pods on no…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache jev        Y      406.7     705       24   0.000030  service=notifications-worker; error=que…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__clear_cache claude     Y     1525.8     588       22   0.001396  service=notifications-worker; error=que…  {'degradation_impact__clear_cache': 1.0}
+score:degradation_impact__renew_certificate jev        Y      316.5     620       24   0.000026  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__renew_certificate': 0.99}
+score:degradation_impact__renew_certificate claude     Y     1434.0     476       23   0.001182  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate jev        Y      325.4     586       24   0.000025  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__renew_certificate': 0.99}
+score:degradation_impact__renew_certificate claude     Y     1520.9     430       23   0.001090  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate jev        Y      406.5     619       24   0.000026  service=recommendations; error=p99 late…  {'degradation_impact__renew_certificate': 0.99}
+score:degradation_impact__renew_certificate claude     Y     1640.7     476       23   0.001182  service=recommendations; error=p99 late…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate jev        Y      446.8     590       24   0.000025  service=orders-db; error=primary health…  {'degradation_impact__renew_certificate': 0.99}
+score:degradation_impact__renew_certificate claude     Y     1598.8     440       23   0.001110  service=orders-db; error=primary health…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate jev        Y      408.8     594       24   0.000025  service=auth-svc; error=100% of new log…  {'degradation_impact__renew_certificate': 0.97}
+score:degradation_impact__renew_certificate claude     Y     1640.5     448       23   0.001126  service=auth-svc; error=100% of new log…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate jev        N      406.5     630       24   0.000026  service=payments-gateway; error=100% of…  {'degradation_impact__renew_certificate': 3.72}
+score:degradation_impact__renew_certificate claude     N        0.0       0        0   0.000000  service=payments-gateway; error=100% of…  {'error': 'JSONDecodeError: Unterminated string starting at: line 1 column 2 (char 1)'}
+score:degradation_impact__renew_certificate jev        Y      373.2     619       24   0.000026  service=api-gateway; error=tenants rece…  {'degradation_impact__renew_certificate': 0.94}
+score:degradation_impact__renew_certificate claude     Y     1608.6     474       23   0.001178  service=api-gateway; error=tenants rece…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate jev        Y      291.0     596       24   0.000025  service=inventory-svc; error=stale pric…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate claude     Y     1349.3     448       23   0.001126  service=inventory-svc; error=stale pric…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate jev        Y      288.6     617       24   0.000026  service=multiple; error=only pods on no…  {'degradation_impact__renew_certificate': 0.98}
+score:degradation_impact__renew_certificate claude     Y     1477.8     479       23   0.001188  service=multiple; error=only pods on no…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__renew_certificate jev        Y      380.7     611       24   0.000026  service=notifications-worker; error=que…  {'degradation_impact__renew_certificate': 0.98}
+score:degradation_impact__renew_certificate claude     Y     1562.8     467       23   0.001164  service=notifications-worker; error=que…  {'degradation_impact__renew_certificate': 1.0}
+score:degradation_impact__toggle_feature_flag jev        N      381.5     696       25   0.000029  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__toggle_feature_flag': 4.68}
+score:degradation_impact__toggle_feature_flag claude     Y     3280.2     556      235   0.003462  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__toggle_feature_flag': 4.0}
+score:degradation_impact__toggle_feature_flag jev        Y      306.3     662       25   0.000028  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__toggle_feature_flag': 1.0}
+score:degradation_impact__toggle_feature_flag claude     Y     1741.0     510       24   0.001260  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__toggle_feature_flag': 1}
+score:degradation_impact__toggle_feature_flag jev        Y      292.6     695       25   0.000029  service=recommendations; error=p99 late…  {'degradation_impact__toggle_feature_flag': 3.18}
+score:degradation_impact__toggle_feature_flag claude     N        0.0       0        0   0.000000  service=recommendations; error=p99 late…  {'error': 'StopIteration: '}
+score:degradation_impact__toggle_feature_flag jev        Y      405.6     666       25   0.000028  service=orders-db; error=primary health…  {'degradation_impact__toggle_feature_flag': 1.0}
+score:degradation_impact__toggle_feature_flag claude     Y     1742.1     520       24   0.001280  service=orders-db; error=primary health…  {'degradation_impact__toggle_feature_flag': 1}
+score:degradation_impact__toggle_feature_flag jev        Y      343.2     670       25   0.000028  service=auth-svc; error=100% of new log…  {'degradation_impact__toggle_feature_flag': 1.0}
+score:degradation_impact__toggle_feature_flag claude     Y     1793.3     528       26   0.001316  service=auth-svc; error=100% of new log…  {'degradation_impact__toggle_feature_flag': 1.0}
+score:degradation_impact__toggle_feature_flag jev        Y      298.7     706       25   0.000030  service=payments-gateway; error=100% of…  {'degradation_impact__toggle_feature_flag': 3.82}
+score:degradation_impact__toggle_feature_flag claude     Y     1762.2     560       26   0.001380  service=payments-gateway; error=100% of…  {'degradation_impact__toggle_feature_flag': 4.0}
+score:degradation_impact__toggle_feature_flag jev        Y      283.3     695       25   0.000029  service=api-gateway; error=tenants rece…  {'degradation_impact__toggle_feature_flag': 3.81}
+score:degradation_impact__toggle_feature_flag claude     N        0.0       0        0   0.000000  service=api-gateway; error=tenants rece…  {'error': 'StopIteration: '}
+score:degradation_impact__toggle_feature_flag jev        Y      404.1     672       25   0.000028  service=inventory-svc; error=stale pric…  {'degradation_impact__toggle_feature_flag': 1.1}
+score:degradation_impact__toggle_feature_flag claude     Y     1748.4     528       73   0.001786  service=inventory-svc; error=stale pric…  {'degradation_impact__toggle_feature_flag': 1}
+score:degradation_impact__toggle_feature_flag jev        Y      324.2     693       25   0.000029  service=multiple; error=only pods on no…  {'degradation_impact__toggle_feature_flag': 1.0}
+score:degradation_impact__toggle_feature_flag claude     Y     1718.4     559       26   0.001378  service=multiple; error=only pods on no…  {'degradation_impact__toggle_feature_flag': 1.0}
+score:degradation_impact__toggle_feature_flag jev        Y      304.5     687       25   0.000029  service=notifications-worker; error=que…  {'degradation_impact__toggle_feature_flag': 4.92}
+score:degradation_impact__toggle_feature_flag claude     Y     3690.9     547      247   0.003564  service=notifications-worker; error=que…  {'degradation_impact__toggle_feature_flag': 4.8}
+score:degradation_impact__throttle_traffic jev        Y      292.8     689       28   0.000029  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__throttle_traffic': 1.01}
+score:degradation_impact__throttle_traffic claude     Y     1650.0     544       24   0.001328  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic jev        Y      343.0     655       28   0.000028  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic claude     Y     1601.9     498       24   0.001236  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic jev        Y      275.9     688       28   0.000029  service=recommendations; error=p99 late…  {'degradation_impact__throttle_traffic': 2.04}
+score:degradation_impact__throttle_traffic claude     Y     1521.9     544       24   0.001328  service=recommendations; error=p99 late…  {'degradation_impact__throttle_traffic': 2.0}
+score:degradation_impact__throttle_traffic jev        Y      350.6     659       28   0.000028  service=orders-db; error=primary health…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic claude     Y     2357.5     508      130   0.002316  service=orders-db; error=primary health…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic jev        Y      406.8     663       28   0.000028  service=auth-svc; error=100% of new log…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic claude     Y     1676.6     516       24   0.001272  service=auth-svc; error=100% of new log…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic jev        Y      371.5     699       28   0.000029  service=payments-gateway; error=100% of…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic claude     Y     1640.0     548       24   0.001336  service=payments-gateway; error=100% of…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic jev        Y      407.5     688       28   0.000029  service=api-gateway; error=tenants rece…  {'degradation_impact__throttle_traffic': 4.77}
+score:degradation_impact__throttle_traffic claude     Y     3728.7     542      255   0.003634  service=api-gateway; error=tenants rece…  {'degradation_impact__throttle_traffic': 4.7}
+score:degradation_impact__throttle_traffic jev        Y      366.9     665       28   0.000028  service=inventory-svc; error=stale pric…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic claude     Y     1639.7     516       24   0.001272  service=inventory-svc; error=stale pric…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic jev        Y      407.6     686       28   0.000029  service=multiple; error=only pods on no…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic claude     Y     1640.0     547       24   0.001334  service=multiple; error=only pods on no…  {'degradation_impact__throttle_traffic': 1.0}
+score:degradation_impact__throttle_traffic jev        Y      407.8     680       28   0.000029  service=notifications-worker; error=que…  {'degradation_impact__throttle_traffic': 2.32}
+score:degradation_impact__throttle_traffic claude     N        0.0       0        0   0.000000  service=notifications-worker; error=que…  {'error': 'StopIteration: '}
+score:degradation_impact__drain_node jev        Y      308.0     707       25   0.000030  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__drain_node': 1.0}
+score:degradation_impact__drain_node claude     Y     1521.6     581       21   0.001372  service=checkout-api; error=HTTP 5xx 18…  {'degradation_impact__drain_node': 1.0}
+score:degradation_impact__drain_node jev        Y      417.9     673       25   0.000028  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__drain_node': 1.06}
+score:degradation_impact__drain_node claude     Y     1492.5     535       21   0.001280  service=search-svc; error=5xx 6%; pods …  {'degradation_impact__drain_node': 1.0}
+score:degradation_impact__drain_node jev        Y      349.3     706       25   0.000030  service=recommendations; error=p99 late…  {'degradation_impact__drain_node': 0.23}
+score:degradation_impact__drain_node claude     Y     1640.9     581       21   0.001372  service=recommendations; error=p99 late…  {'degradation_impact__drain_node': 0.3}
+score:degradation_impact__drain_node jev        Y      407.4     677       25   0.000028  service=orders-db; error=primary health…  {'degradation_impact__drain_node': 1.31}
+score:degradation_impact__drain_node claude     Y     1644.1     545       21   0.001300  service=orders-db; error=primary health…  {'degradation_impact__drain_node': 1.0}
+score:degradation_impact__drain_node jev        N      403.6     681       25   0.000029  service=auth-svc; error=100% of new log…  {'degradation_impact__drain_node': 1.2}
+score:degradation_impact__drain_node claude     Y     3280.4     553      193   0.003036  service=auth-svc; error=100% of new log…  {'degradation_impact__drain_node': 2.0}
+score:degradation_impact__drain_node jev        Y      405.2     717       25   0.000030  service=payments-gateway; error=100% of…  {'degradation_impact__drain_node': 1.0}
+score:degradation_impact__drain_node claude     Y     1685.4     585       19   0.001360  service=payments-gateway; error=100% of…  {'degradation_impact__drain_node': 1}
+score:degradation_impact__drain_node jev        Y      377.4     706       25   0.000030  service=api-gateway; error=tenants rece…  {'degradation_impact__drain_node': 0.77}
+score:degradation_impact__drain_node claude     Y     3061.0     579      222   0.003378  service=api-gateway; error=tenants rece…  {'degradation_impact__drain_node': 0.8}
+score:degradation_impact__drain_node jev        Y      405.0     683       25   0.000029  service=inventory-svc; error=stale pric…  {'degradation_impact__drain_node': 1.02}
+score:degradation_impact__drain_node claude     Y     1469.5     553       21   0.001316  service=inventory-svc; error=stale pric…  {'degradation_impact__drain_node': 1.0}
+score:degradation_impact__drain_node jev        Y      373.3     704       25   0.000030  service=multiple; error=only pods on no…  {'degradation_impact__drain_node': 4.71}
+score:degradation_impact__drain_node claude     Y     1844.6     584       21   0.001378  service=multiple; error=only pods on no…  {'degradation_impact__drain_node': 4.9}
+score:degradation_impact__drain_node jev        Y      407.9     698       25   0.000029  service=notifications-worker; error=que…  {'degradation_impact__drain_node': 0.77}
+score:degradation_impact__drain_node claude     N        0.0       0        0   0.000000  service=notifications-worker; error=que…  {'error': 'StopIteration: '}
+score:time_to_recovery__rollback_deploy jev        N      277.4     692       25   0.000029  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__rollback_deploy': 3.34}
+score:time_to_recovery__rollback_deploy claude     N        0.0       0        0   0.000000  service=checkout-api; error=HTTP 5xx 18…  {'error': 'StopIteration: '}
+score:time_to_recovery__rollback_deploy jev        Y      404.2     658       25   0.000028  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__rollback_deploy': 2.86}
+score:time_to_recovery__rollback_deploy claude     N        0.0       0        0   0.000000  service=search-svc; error=5xx 6%; pods …  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:time_to_recovery__rollback_deploy jev        Y      378.1     691       25   0.000029  service=recommendations; error=p99 late…  {'time_to_recovery__rollback_deploy': 0.02}
+score:time_to_recovery__rollback_deploy claude     Y     1640.5     564       23   0.001358  service=recommendations; error=p99 late…  {'time_to_recovery__rollback_deploy': 0}
+score:time_to_recovery__rollback_deploy jev        Y      407.9     662       25   0.000028  service=orders-db; error=primary health…  {'time_to_recovery__rollback_deploy': 0.03}
+score:time_to_recovery__rollback_deploy claude     Y     1639.6     528       23   0.001286  service=orders-db; error=primary health…  {'time_to_recovery__rollback_deploy': 0}
+score:time_to_recovery__rollback_deploy jev        N      406.9     666       25   0.000028  service=auth-svc; error=100% of new log…  {'time_to_recovery__rollback_deploy': 1.29}
+score:time_to_recovery__rollback_deploy claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': 'StopIteration: '}
+score:time_to_recovery__rollback_deploy jev        Y      265.9     702       25   0.000029  service=payments-gateway; error=100% of…  {'time_to_recovery__rollback_deploy': 0.01}
+score:time_to_recovery__rollback_deploy claude     Y     1554.3     568       23   0.001366  service=payments-gateway; error=100% of…  {'time_to_recovery__rollback_deploy': 0}
+score:time_to_recovery__rollback_deploy jev        Y      381.6     691       25   0.000029  service=api-gateway; error=tenants rece…  {'time_to_recovery__rollback_deploy': 0.01}
+score:time_to_recovery__rollback_deploy claude     Y     1495.2     562       23   0.001354  service=api-gateway; error=tenants rece…  {'time_to_recovery__rollback_deploy': 0}
+score:time_to_recovery__rollback_deploy jev        N      343.6     668       25   0.000028  service=inventory-svc; error=stale pric…  {'time_to_recovery__rollback_deploy': 1.64}
+score:time_to_recovery__rollback_deploy claude     Y     1746.0     536       23   0.001302  service=inventory-svc; error=stale pric…  {'time_to_recovery__rollback_deploy': 0}
+score:time_to_recovery__rollback_deploy jev        Y      306.9     689       25   0.000029  service=multiple; error=only pods on no…  {'time_to_recovery__rollback_deploy': 0.04}
+score:time_to_recovery__rollback_deploy claude     Y     1448.9     567       23   0.001364  service=multiple; error=only pods on no…  {'time_to_recovery__rollback_deploy': 0}
+score:time_to_recovery__rollback_deploy jev        Y      392.0     683       25   0.000029  service=notifications-worker; error=que…  {'time_to_recovery__rollback_deploy': 0.06}
+score:time_to_recovery__rollback_deploy claude     Y     1551.1     555       23   0.001340  service=notifications-worker; error=que…  {'time_to_recovery__rollback_deploy': 0}
+score:time_to_recovery__restart_pods jev        Y      393.9     678       25   0.000028  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__restart_pods': 0.41}
+score:time_to_recovery__restart_pods claude     Y     1540.2     549       21   0.001308  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__restart_pods': 0}
+score:time_to_recovery__restart_pods jev        N      405.3     644       25   0.000027  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__restart_pods': 0.97}
+score:time_to_recovery__restart_pods claude     Y     3144.7     503      238   0.003386  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__restart_pods': 3.0}
+score:time_to_recovery__restart_pods jev        Y      275.8     677       25   0.000028  service=recommendations; error=p99 late…  {'time_to_recovery__restart_pods': 0.13}
+score:time_to_recovery__restart_pods claude     Y     1638.1     549       21   0.001308  service=recommendations; error=p99 late…  {'time_to_recovery__restart_pods': 0}
+score:time_to_recovery__restart_pods jev        Y      302.2     648       25   0.000027  service=orders-db; error=primary health…  {'time_to_recovery__restart_pods': 0.05}
+score:time_to_recovery__restart_pods claude     N        0.0       0        0   0.000000  service=orders-db; error=primary health…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:time_to_recovery__restart_pods jev        Y      387.7     652       25   0.000027  service=auth-svc; error=100% of new log…  {'time_to_recovery__restart_pods': 3.79}
+score:time_to_recovery__restart_pods claude     Y     2897.2     521      172   0.002762  service=auth-svc; error=100% of new log…  {'time_to_recovery__restart_pods': 4.0}
+score:time_to_recovery__restart_pods jev        Y      312.9     688       25   0.000029  service=payments-gateway; error=100% of…  {'time_to_recovery__restart_pods': 0.01}
+score:time_to_recovery__restart_pods claude     Y     1397.7     553       21   0.001316  service=payments-gateway; error=100% of…  {'time_to_recovery__restart_pods': 0}
+score:time_to_recovery__restart_pods jev        Y      446.5     677       25   0.000028  service=api-gateway; error=tenants rece…  {'time_to_recovery__restart_pods': 0.07}
+score:time_to_recovery__restart_pods claude     Y     1601.0     547       23   0.001324  service=api-gateway; error=tenants rece…  {'time_to_recovery__restart_pods': 0.0}
+score:time_to_recovery__restart_pods jev        Y      409.3     654       25   0.000027  service=inventory-svc; error=stale pric…  {'time_to_recovery__restart_pods': 0.45}
+score:time_to_recovery__restart_pods claude     Y     1651.5     521       21   0.001252  service=inventory-svc; error=stale pric…  {'time_to_recovery__restart_pods': 0}
+score:time_to_recovery__restart_pods jev        Y      299.5     675       25   0.000028  service=multiple; error=only pods on no…  {'time_to_recovery__restart_pods': 0.14}
+score:time_to_recovery__restart_pods claude     Y     1530.3     552       23   0.001334  service=multiple; error=only pods on no…  {'time_to_recovery__restart_pods': 0.0}
+score:time_to_recovery__restart_pods jev        Y      271.2     669       25   0.000028  service=notifications-worker; error=que…  {'time_to_recovery__restart_pods': 0.25}
+score:time_to_recovery__restart_pods claude     Y     1571.5     540       21   0.001290  service=notifications-worker; error=que…  {'time_to_recovery__restart_pods': 0}
+score:time_to_recovery__scale_out jev        Y      408.9     667       24   0.000028  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__scale_out': 0.1}
+score:time_to_recovery__scale_out claude     Y     1639.9     527       20   0.001254  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__scale_out': 0}
+score:time_to_recovery__scale_out jev        Y      417.5     633       24   0.000027  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__scale_out': 0.37}
+score:time_to_recovery__scale_out claude     Y     1630.5     481       22   0.001182  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__scale_out': 0.0}
+score:time_to_recovery__scale_out jev        N      406.8     666       24   0.000028  service=recommendations; error=p99 late…  {'time_to_recovery__scale_out': 3.36}
+score:time_to_recovery__scale_out claude     N        0.0       0        0   0.000000  service=recommendations; error=p99 late…  {'error': 'StopIteration: '}
+score:time_to_recovery__scale_out jev        Y      473.5     637       24   0.000027  service=orders-db; error=primary health…  {'time_to_recovery__scale_out': 0.07}
+score:time_to_recovery__scale_out claude     Y     1613.1     491       20   0.001182  service=orders-db; error=primary health…  {'time_to_recovery__scale_out': 0}
+score:time_to_recovery__scale_out jev        Y      269.9     641       24   0.000027  service=auth-svc; error=100% of new log…  {'time_to_recovery__scale_out': 0.25}
+score:time_to_recovery__scale_out claude     Y     2969.9     499      206   0.003058  service=auth-svc; error=100% of new log…  {'time_to_recovery__scale_out': 0}
+score:time_to_recovery__scale_out jev        Y      279.3     677       24   0.000028  service=payments-gateway; error=100% of…  {'time_to_recovery__scale_out': 0.02}
+score:time_to_recovery__scale_out claude     Y     1629.2     531       20   0.001262  service=payments-gateway; error=100% of…  {'time_to_recovery__scale_out': 0}
+score:time_to_recovery__scale_out jev        N      405.2     666       24   0.000028  service=api-gateway; error=tenants rece…  {'time_to_recovery__scale_out': 0.85}
+score:time_to_recovery__scale_out claude     N        0.0       0        0   0.000000  service=api-gateway; error=tenants rece…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:time_to_recovery__scale_out jev        Y      285.3     643       24   0.000027  service=inventory-svc; error=stale pric…  {'time_to_recovery__scale_out': 0.09}
+score:time_to_recovery__scale_out claude     Y     1562.3     499       20   0.001198  service=inventory-svc; error=stale pric…  {'time_to_recovery__scale_out': 0}
+score:time_to_recovery__scale_out jev        Y      371.3     664       24   0.000028  service=multiple; error=only pods on no…  {'time_to_recovery__scale_out': 0.36}
+score:time_to_recovery__scale_out claude     Y     1640.1     530       20   0.001260  service=multiple; error=only pods on no…  {'time_to_recovery__scale_out': 0}
+score:time_to_recovery__scale_out jev        N      417.4     658       24   0.000028  service=notifications-worker; error=que…  {'time_to_recovery__scale_out': 1.11}
+score:time_to_recovery__scale_out claude     Y     2110.0     518      109   0.002126  service=notifications-worker; error=que…  {'time_to_recovery__scale_out': 0.0}
+score:time_to_recovery__increase_resource_limits jev        Y      439.4     646       25   0.000027  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__increase_resource_limits': 0.03}
+score:time_to_recovery__increase_resource_limits claude     Y     1581.4     505       24   0.001250  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__increase_resource_limits': 0}
+score:time_to_recovery__increase_resource_limits jev        N      363.4     612       25   0.000026  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__increase_resource_limits': 0.65}
+score:time_to_recovery__increase_resource_limits claude     N        0.0       0        0   0.000000  service=search-svc; error=5xx 6%; pods …  {'error': 'StopIteration: '}
+score:time_to_recovery__increase_resource_limits jev        N      404.9     645       25   0.000027  service=recommendations; error=p99 late…  {'time_to_recovery__increase_resource_limits': 0.97}
+score:time_to_recovery__increase_resource_limits claude     N        0.0       0        0   0.000000  service=recommendations; error=p99 late…  {'error': 'StopIteration: '}
+score:time_to_recovery__increase_resource_limits jev        Y      391.5     616       25   0.000026  service=orders-db; error=primary health…  {'time_to_recovery__increase_resource_limits': 0.02}
+score:time_to_recovery__increase_resource_limits claude     Y     1652.9     469       26   0.001198  service=orders-db; error=primary health…  {'time_to_recovery__increase_resource_limits': 0.0}
+score:time_to_recovery__increase_resource_limits jev        Y      407.0     620       25   0.000026  service=auth-svc; error=100% of new log…  {'time_to_recovery__increase_resource_limits': 0.01}
+score:time_to_recovery__increase_resource_limits claude     Y     1691.9     477       26   0.001214  service=auth-svc; error=100% of new log…  {'time_to_recovery__increase_resource_limits': 0.0}
+score:time_to_recovery__increase_resource_limits jev        Y      311.3     656       25   0.000028  service=payments-gateway; error=100% of…  {'time_to_recovery__increase_resource_limits': 0.01}
+score:time_to_recovery__increase_resource_limits claude     Y     1666.6     509       26   0.001278  service=payments-gateway; error=100% of…  {'time_to_recovery__increase_resource_limits': 0.0}
+score:time_to_recovery__increase_resource_limits jev        Y      426.7     645       25   0.000027  service=api-gateway; error=tenants rece…  {'time_to_recovery__increase_resource_limits': 0.39}
+score:time_to_recovery__increase_resource_limits claude     Y     1641.4     503       26   0.001266  service=api-gateway; error=tenants rece…  {'time_to_recovery__increase_resource_limits': 0.0}
+score:time_to_recovery__increase_resource_limits jev        Y      300.3     622       25   0.000026  service=inventory-svc; error=stale pric…  {'time_to_recovery__increase_resource_limits': 0.04}
+score:time_to_recovery__increase_resource_limits claude     Y     1744.9     477       26   0.001214  service=inventory-svc; error=stale pric…  {'time_to_recovery__increase_resource_limits': 0.0}
+score:time_to_recovery__increase_resource_limits jev        Y      406.9     643       25   0.000027  service=multiple; error=only pods on no…  {'time_to_recovery__increase_resource_limits': 0.02}
+score:time_to_recovery__increase_resource_limits claude     Y     1640.6     508       26   0.001276  service=multiple; error=only pods on no…  {'time_to_recovery__increase_resource_limits': 0.0}
+score:time_to_recovery__increase_resource_limits jev        Y      297.8     637       25   0.000027  service=notifications-worker; error=que…  {'time_to_recovery__increase_resource_limits': 0.14}
+score:time_to_recovery__increase_resource_limits claude     Y     1749.5     496       26   0.001252  service=notifications-worker; error=que…  {'time_to_recovery__increase_resource_limits': 0.0}
+score:time_to_recovery__failover_db jev        Y      407.2     652       26   0.000027  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__failover_db': 0.0}
+score:time_to_recovery__failover_db claude     Y     1503.0     504       20   0.001208  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__failover_db jev        Y      340.3     618       26   0.000026  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__failover_db': 0.01}
+score:time_to_recovery__failover_db claude     Y     1639.5     458       20   0.001116  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__failover_db jev        Y      315.6     651       26   0.000027  service=recommendations; error=p99 late…  {'time_to_recovery__failover_db': 0.01}
+score:time_to_recovery__failover_db claude     Y     1571.0     504       20   0.001208  service=recommendations; error=p99 late…  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__failover_db jev        N      363.9     622       26   0.000026  service=orders-db; error=primary health…  {'time_to_recovery__failover_db': 3.31}
+score:time_to_recovery__failover_db claude     Y     2747.4     468      177   0.002706  service=orders-db; error=primary health…  {'time_to_recovery__failover_db': 4.0}
+score:time_to_recovery__failover_db jev        Y      324.3     626       26   0.000026  service=auth-svc; error=100% of new log…  {'time_to_recovery__failover_db': 0.01}
+score:time_to_recovery__failover_db claude     Y     1435.6     476       20   0.001152  service=auth-svc; error=100% of new log…  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__failover_db jev        Y      407.6     662       26   0.000028  service=payments-gateway; error=100% of…  {'time_to_recovery__failover_db': 0.0}
+score:time_to_recovery__failover_db claude     Y     1640.1     508       20   0.001216  service=payments-gateway; error=100% of…  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__failover_db jev        Y      407.8     651       26   0.000027  service=api-gateway; error=tenants rece…  {'time_to_recovery__failover_db': 0.01}
+score:time_to_recovery__failover_db claude     Y     1639.7     502       20   0.001204  service=api-gateway; error=tenants rece…  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__failover_db jev        Y      407.7     628       26   0.000026  service=inventory-svc; error=stale pric…  {'time_to_recovery__failover_db': 0.02}
+score:time_to_recovery__failover_db claude     Y     1639.9     476       20   0.001152  service=inventory-svc; error=stale pric…  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__failover_db jev        Y      407.4     649       26   0.000027  service=multiple; error=only pods on no…  {'time_to_recovery__failover_db': 0.0}
+score:time_to_recovery__failover_db claude     Y     1640.0     507       20   0.001214  service=multiple; error=only pods on no…  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__failover_db jev        Y      406.8     643       26   0.000027  service=notifications-worker; error=que…  {'time_to_recovery__failover_db': 0.01}
+score:time_to_recovery__failover_db claude     Y     1562.3     495       20   0.001190  service=notifications-worker; error=que…  {'time_to_recovery__failover_db': 0}
+score:time_to_recovery__clear_cache jev        Y      383.4     643       24   0.000027  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__clear_cache': 0.05}
+score:time_to_recovery__clear_cache claude     Y     1537.7     484       21   0.001178  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__clear_cache': 0}
+score:time_to_recovery__clear_cache jev        Y      407.2     609       24   0.000026  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__clear_cache': 0.16}
+score:time_to_recovery__clear_cache claude     Y     1539.5     438       23   0.001106  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__clear_cache': 0.0}
+score:time_to_recovery__clear_cache jev        Y      610.8     642       24   0.000027  service=recommendations; error=p99 late…  {'time_to_recovery__clear_cache': 0.04}
+score:time_to_recovery__clear_cache claude     Y     1844.8     484       21   0.001178  service=recommendations; error=p99 late…  {'time_to_recovery__clear_cache': 0}
+score:time_to_recovery__clear_cache jev        Y      406.9     613       24   0.000026  service=orders-db; error=primary health…  {'time_to_recovery__clear_cache': 0.01}
+score:time_to_recovery__clear_cache claude     Y     1641.1     448       21   0.001106  service=orders-db; error=primary health…  {'time_to_recovery__clear_cache': 0}
+score:time_to_recovery__clear_cache jev        Y      316.9     617       24   0.000026  service=auth-svc; error=100% of new log…  {'time_to_recovery__clear_cache': 0.09}
+score:time_to_recovery__clear_cache claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:time_to_recovery__clear_cache jev        Y      321.6     653       24   0.000027  service=payments-gateway; error=100% of…  {'time_to_recovery__clear_cache': 0.01}
+score:time_to_recovery__clear_cache claude     Y     1451.1     488       21   0.001186  service=payments-gateway; error=100% of…  {'time_to_recovery__clear_cache': 0}
+score:time_to_recovery__clear_cache jev        Y      366.7     642       24   0.000027  service=api-gateway; error=tenants rece…  {'time_to_recovery__clear_cache': 0.01}
+score:time_to_recovery__clear_cache claude     Y     1639.9     482       21   0.001174  service=api-gateway; error=tenants rece…  {'time_to_recovery__clear_cache': 0}
+score:time_to_recovery__clear_cache jev        Y      407.7     619       24   0.000026  service=inventory-svc; error=stale pric…  {'time_to_recovery__clear_cache': 2.81}
+score:time_to_recovery__clear_cache claude     N        0.0       0        0   0.000000  service=inventory-svc; error=stale pric…  {'error': 'StopIteration: '}
+score:time_to_recovery__clear_cache jev        Y      319.3     640       24   0.000027  service=multiple; error=only pods on no…  {'time_to_recovery__clear_cache': 0.01}
+score:time_to_recovery__clear_cache claude     Y     1638.8     487       23   0.001204  service=multiple; error=only pods on no…  {'time_to_recovery__clear_cache': 0.0}
+score:time_to_recovery__clear_cache jev        Y      409.4     634       24   0.000027  service=notifications-worker; error=que…  {'time_to_recovery__clear_cache': 0.01}
+score:time_to_recovery__clear_cache claude     Y     1844.5     475       21   0.001160  service=notifications-worker; error=que…  {'time_to_recovery__clear_cache': 0}
+score:time_to_recovery__renew_certificate jev        Y      418.9     641       24   0.000027  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__renew_certificate': 0.02}
+score:time_to_recovery__renew_certificate claude     Y     1425.1     506       24   0.001252  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__renew_certificate': 0.0}
+score:time_to_recovery__renew_certificate jev        Y      325.9     607       24   0.000025  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__renew_certificate': 0.03}
+score:time_to_recovery__renew_certificate claude     Y     1413.3     460       22   0.001140  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__renew_certificate': 0}
+score:time_to_recovery__renew_certificate jev        Y      408.7     640       24   0.000027  service=recommendations; error=p99 late…  {'time_to_recovery__renew_certificate': 0.04}
+score:time_to_recovery__renew_certificate claude     Y     1538.4     506       22   0.001232  service=recommendations; error=p99 late…  {'time_to_recovery__renew_certificate': 0}
+score:time_to_recovery__renew_certificate jev        Y      406.4     611       24   0.000026  service=orders-db; error=primary health…  {'time_to_recovery__renew_certificate': 0.01}
+score:time_to_recovery__renew_certificate claude     Y     1641.1     470       22   0.001160  service=orders-db; error=primary health…  {'time_to_recovery__renew_certificate': 0}
+score:time_to_recovery__renew_certificate jev        Y      407.4     615       24   0.000026  service=auth-svc; error=100% of new log…  {'time_to_recovery__renew_certificate': 0.04}
+score:time_to_recovery__renew_certificate claude     Y     1517.6     478       22   0.001176  service=auth-svc; error=100% of new log…  {'time_to_recovery__renew_certificate': 0}
+score:time_to_recovery__renew_certificate jev        Y      324.6     651       24   0.000027  service=payments-gateway; error=100% of…  {'time_to_recovery__renew_certificate': 0.68}
+score:time_to_recovery__renew_certificate claude     Y     1661.7     510       24   0.001260  service=payments-gateway; error=100% of…  {'time_to_recovery__renew_certificate': 1.0}
+score:time_to_recovery__renew_certificate jev        Y      386.4     640       24   0.000027  service=api-gateway; error=tenants rece…  {'time_to_recovery__renew_certificate': 0.02}
+score:time_to_recovery__renew_certificate claude     Y     1538.1     504       22   0.001228  service=api-gateway; error=tenants rece…  {'time_to_recovery__renew_certificate': 0}
+score:time_to_recovery__renew_certificate jev        Y      519.9     617       24   0.000026  service=inventory-svc; error=stale pric…  {'time_to_recovery__renew_certificate': 0.02}
+score:time_to_recovery__renew_certificate claude     Y     1629.6     478       22   0.001176  service=inventory-svc; error=stale pric…  {'time_to_recovery__renew_certificate': 0}
+score:time_to_recovery__renew_certificate jev        Y      407.6     638       24   0.000027  service=multiple; error=only pods on no…  {'time_to_recovery__renew_certificate': 0.02}
+score:time_to_recovery__renew_certificate claude     Y     1639.9     509       22   0.001238  service=multiple; error=only pods on no…  {'time_to_recovery__renew_certificate': 0}
+score:time_to_recovery__renew_certificate jev        Y      407.2     632       24   0.000027  service=notifications-worker; error=que…  {'time_to_recovery__renew_certificate': 0.01}
+score:time_to_recovery__renew_certificate claude     Y     1640.4     497       22   0.001214  service=notifications-worker; error=que…  {'time_to_recovery__renew_certificate': 0}
+score:time_to_recovery__toggle_feature_flag jev        N      407.0     709       25   0.000030  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__toggle_feature_flag': 4.37}
+score:time_to_recovery__toggle_feature_flag claude     Y     3136.6     575      169   0.002840  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__toggle_feature_flag': 4.7}
+score:time_to_recovery__toggle_feature_flag jev        Y      446.9     675       25   0.000028  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__toggle_feature_flag': 0.0}
+score:time_to_recovery__toggle_feature_flag claude     Y     1538.5     529       25   0.001308  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__toggle_feature_flag': 0}
+score:time_to_recovery__toggle_feature_flag jev        N      406.6     708       25   0.000030  service=recommendations; error=p99 late…  {'time_to_recovery__toggle_feature_flag': 1.53}
+score:time_to_recovery__toggle_feature_flag claude     N        0.0       0        0   0.000000  service=recommendations; error=p99 late…  {'error': 'StopIteration: '}
+score:time_to_recovery__toggle_feature_flag jev        Y      405.5     679       25   0.000029  service=orders-db; error=primary health…  {'time_to_recovery__toggle_feature_flag': 0.04}
+score:time_to_recovery__toggle_feature_flag claude     N        0.0       0        0   0.000000  service=orders-db; error=primary health…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:time_to_recovery__toggle_feature_flag jev        Y      360.2     683       25   0.000029  service=auth-svc; error=100% of new log…  {'time_to_recovery__toggle_feature_flag': 0.04}
+score:time_to_recovery__toggle_feature_flag claude     Y     1789.3     547       25   0.001344  service=auth-svc; error=100% of new log…  {'time_to_recovery__toggle_feature_flag': 0}
+score:time_to_recovery__toggle_feature_flag jev        N      509.9     719       25   0.000030  service=payments-gateway; error=100% of…  {'time_to_recovery__toggle_feature_flag': 4.21}
+score:time_to_recovery__toggle_feature_flag claude     N        0.0       0        0   0.000000  service=payments-gateway; error=100% of…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:time_to_recovery__toggle_feature_flag jev        N      423.9     708       25   0.000030  service=api-gateway; error=tenants rece…  {'time_to_recovery__toggle_feature_flag': 4.2}
+score:time_to_recovery__toggle_feature_flag claude     N        0.0       0        0   0.000000  service=api-gateway; error=tenants rece…  {'error': 'StopIteration: '}
+score:time_to_recovery__toggle_feature_flag jev        Y      405.2     685       25   0.000029  service=inventory-svc; error=stale pric…  {'time_to_recovery__toggle_feature_flag': 0.22}
+score:time_to_recovery__toggle_feature_flag claude     Y     2238.1     547      145   0.002544  service=inventory-svc; error=stale pric…  {'time_to_recovery__toggle_feature_flag': 0}
+score:time_to_recovery__toggle_feature_flag jev        Y      423.7     706       25   0.000030  service=multiple; error=only pods on no…  {'time_to_recovery__toggle_feature_flag': 0.02}
+score:time_to_recovery__toggle_feature_flag claude     Y     1639.9     578       25   0.001406  service=multiple; error=only pods on no…  {'time_to_recovery__toggle_feature_flag': 0}
+score:time_to_recovery__toggle_feature_flag jev        Y      407.7     700       25   0.000029  service=notifications-worker; error=que…  {'time_to_recovery__toggle_feature_flag': 1.83}
+score:time_to_recovery__toggle_feature_flag claude     N        0.0       0        0   0.000000  service=notifications-worker; error=que…  {'error': 'StopIteration: '}
+score:time_to_recovery__throttle_traffic jev        Y      404.4     666       28   0.000028  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__throttle_traffic': 0.03}
+score:time_to_recovery__throttle_traffic claude     Y     1612.2     527       23   0.001284  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__throttle_traffic': 0}
+score:time_to_recovery__throttle_traffic jev        Y      435.7     632       28   0.000027  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__throttle_traffic': 0.01}
+score:time_to_recovery__throttle_traffic claude     Y     1552.5     481       25   0.001212  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__throttle_traffic': 0.0}
+score:time_to_recovery__throttle_traffic jev        Y      283.7     665       28   0.000028  service=recommendations; error=p99 late…  {'time_to_recovery__throttle_traffic': 0.14}
+score:time_to_recovery__throttle_traffic claude     Y     1537.1     527       23   0.001284  service=recommendations; error=p99 late…  {'time_to_recovery__throttle_traffic': 0}
+score:time_to_recovery__throttle_traffic jev        Y      415.2     636       28   0.000027  service=orders-db; error=primary health…  {'time_to_recovery__throttle_traffic': 0.03}
+score:time_to_recovery__throttle_traffic claude     Y     1947.7     491       23   0.001212  service=orders-db; error=primary health…  {'time_to_recovery__throttle_traffic': 0}
+score:time_to_recovery__throttle_traffic jev        Y      406.0     640       28   0.000027  service=auth-svc; error=100% of new log…  {'time_to_recovery__throttle_traffic': 0.0}
+score:time_to_recovery__throttle_traffic claude     Y     1641.2     499       23   0.001228  service=auth-svc; error=100% of new log…  {'time_to_recovery__throttle_traffic': 0}
+score:time_to_recovery__throttle_traffic jev        Y      407.1     676       28   0.000028  service=payments-gateway; error=100% of…  {'time_to_recovery__throttle_traffic': 0.01}
+score:time_to_recovery__throttle_traffic claude     Y     1520.1     531       23   0.001292  service=payments-gateway; error=100% of…  {'time_to_recovery__throttle_traffic': 0}
+score:time_to_recovery__throttle_traffic jev        Y      322.4     665       28   0.000028  service=api-gateway; error=tenants rece…  {'time_to_recovery__throttle_traffic': 4.67}
+score:time_to_recovery__throttle_traffic claude     Y     1742.8     525       23   0.001280  service=api-gateway; error=tenants rece…  {'time_to_recovery__throttle_traffic': 5}
+score:time_to_recovery__throttle_traffic jev        Y      406.9     642       28   0.000027  service=inventory-svc; error=stale pric…  {'time_to_recovery__throttle_traffic': 0.02}
+score:time_to_recovery__throttle_traffic claude     Y     1640.5     499       23   0.001228  service=inventory-svc; error=stale pric…  {'time_to_recovery__throttle_traffic': 0}
+score:time_to_recovery__throttle_traffic jev        Y      407.8     663       28   0.000028  service=multiple; error=only pods on no…  {'time_to_recovery__throttle_traffic': 0.01}
+score:time_to_recovery__throttle_traffic claude     Y     1642.2     530       25   0.001310  service=multiple; error=only pods on no…  {'time_to_recovery__throttle_traffic': 0.0}
+score:time_to_recovery__throttle_traffic jev        N      427.3     657       28   0.000028  service=notifications-worker; error=que…  {'time_to_recovery__throttle_traffic': 1.06}
+score:time_to_recovery__throttle_traffic claude     N        0.0       0        0   0.000000  service=notifications-worker; error=que…  {'error': 'StopIteration: '}
+score:time_to_recovery__drain_node jev        Y      404.2     643       25   0.000027  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__drain_node': 0.21}
+score:time_to_recovery__drain_node claude     Y     1640.9     495       20   0.001190  service=checkout-api; error=HTTP 5xx 18…  {'time_to_recovery__drain_node': 0}
+score:time_to_recovery__drain_node jev        Y      406.8     609       25   0.000026  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__drain_node': 0.08}
+score:time_to_recovery__drain_node claude     Y     1742.9     449       22   0.001118  service=search-svc; error=5xx 6%; pods …  {'time_to_recovery__drain_node': 0.0}
+score:time_to_recovery__drain_node jev        Y      407.8     642       25   0.000027  service=recommendations; error=p99 late…  {'time_to_recovery__drain_node': 0.02}
+score:time_to_recovery__drain_node claude     Y     1639.9     495       20   0.001190  service=recommendations; error=p99 late…  {'time_to_recovery__drain_node': 0}
+score:time_to_recovery__drain_node jev        N      406.9     613       25   0.000026  service=orders-db; error=primary health…  {'time_to_recovery__drain_node': 1.29}
+score:time_to_recovery__drain_node claude     N        0.0       0        0   0.000000  service=orders-db; error=primary health…  {'error': 'StopIteration: '}
+score:time_to_recovery__drain_node jev        Y      357.2     617       25   0.000026  service=auth-svc; error=100% of new log…  {'time_to_recovery__drain_node': 0.25}
+score:time_to_recovery__drain_node claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:time_to_recovery__drain_node jev        Y      406.4     653       25   0.000027  service=payments-gateway; error=100% of…  {'time_to_recovery__drain_node': 0.06}
+score:time_to_recovery__drain_node claude     Y     1537.9     499       20   0.001198  service=payments-gateway; error=100% of…  {'time_to_recovery__drain_node': 0}
+score:time_to_recovery__drain_node jev        Y      407.2     642       25   0.000027  service=api-gateway; error=tenants rece…  {'time_to_recovery__drain_node': 0.13}
+score:time_to_recovery__drain_node claude     Y     1845.1     493       20   0.001186  service=api-gateway; error=tenants rece…  {'time_to_recovery__drain_node': 0}
+score:time_to_recovery__drain_node jev        Y      301.2     619       25   0.000026  service=inventory-svc; error=stale pric…  {'time_to_recovery__drain_node': 0.06}
+score:time_to_recovery__drain_node claude     Y     1746.6     467       20   0.001134  service=inventory-svc; error=stale pric…  {'time_to_recovery__drain_node': 0}
+score:time_to_recovery__drain_node jev        N      459.7     640       25   0.000027  service=multiple; error=only pods on no…  {'time_to_recovery__drain_node': 2.84}
+score:time_to_recovery__drain_node claude     Y     2816.5     498      151   0.002506  service=multiple; error=only pods on no…  {'time_to_recovery__drain_node': 4.0}
+score:time_to_recovery__drain_node jev        Y      509.9     634       25   0.000027  service=notifications-worker; error=que…  {'time_to_recovery__drain_node': 0.05}
+score:time_to_recovery__drain_node claude     Y     1639.9     486       22   0.001192  service=notifications-worker; error=que…  {'time_to_recovery__drain_node': 0.0}
+score:execution_disruption__rollback_deploy jev        Y      309.9     634       24   0.000027  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__rollback_deploy claude     Y     1942.6     507       24   0.001254  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__rollback_deploy jev        Y      612.4     600       24   0.000025  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__rollback_deploy claude     Y     1643.3     461       22   0.001142  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__rollback_deploy': 2}
+score:execution_disruption__rollback_deploy jev        Y      403.4     633       24   0.000027  service=recommendations; error=p99 late…  {'execution_disruption__rollback_deploy': 1.99}
+score:execution_disruption__rollback_deploy claude     Y     1817.1     507       24   0.001254  service=recommendations; error=p99 late…  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__rollback_deploy jev        Y      333.2     604       24   0.000025  service=orders-db; error=primary health…  {'execution_disruption__rollback_deploy': 2.56}
+score:execution_disruption__rollback_deploy claude     Y     1523.8     471       22   0.001162  service=orders-db; error=primary health…  {'execution_disruption__rollback_deploy': 3}
+score:execution_disruption__rollback_deploy jev        N      422.0     608       24   0.000026  service=auth-svc; error=100% of new log…  {'execution_disruption__rollback_deploy': 2.37}
+score:execution_disruption__rollback_deploy claude     N     3580.8     479      256   0.003518  service=auth-svc; error=100% of new log…  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__rollback_deploy jev        N      412.5     644       24   0.000027  service=payments-gateway; error=100% of…  {'execution_disruption__rollback_deploy': 2.67}
+score:execution_disruption__rollback_deploy claude     N        0.0       0        0   0.000000  service=payments-gateway; error=100% of…  {'error': 'JSONDecodeError: Expecting value: line 1 column 1 (char 0)'}
+score:execution_disruption__rollback_deploy jev        Y      383.6     633       24   0.000027  service=api-gateway; error=tenants rece…  {'execution_disruption__rollback_deploy': 1.92}
+score:execution_disruption__rollback_deploy claude     Y     2666.2     505      192   0.002930  service=api-gateway; error=tenants rece…  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__rollback_deploy jev        Y      405.9     610       24   0.000026  service=inventory-svc; error=stale pric…  {'execution_disruption__rollback_deploy': 1.99}
+score:execution_disruption__rollback_deploy claude     Y     1639.8     479       24   0.001198  service=inventory-svc; error=stale pric…  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__rollback_deploy jev        Y      511.2     631       24   0.000027  service=multiple; error=only pods on no…  {'execution_disruption__rollback_deploy': 1.99}
+score:execution_disruption__rollback_deploy claude     Y     1634.4     510       24   0.001260  service=multiple; error=only pods on no…  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__rollback_deploy jev        Y      295.9     625       24   0.000026  service=notifications-worker; error=que…  {'execution_disruption__rollback_deploy': 1.99}
+score:execution_disruption__rollback_deploy claude     Y     2578.0     498      171   0.002706  service=notifications-worker; error=que…  {'execution_disruption__rollback_deploy': 2.0}
+score:execution_disruption__restart_pods jev        Y      379.6     619       24   0.000026  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__restart_pods': 2.0}
+score:execution_disruption__restart_pods claude     Y     1563.2     492       22   0.001204  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__restart_pods': 2.0}
+score:execution_disruption__restart_pods jev        Y      407.7     585       24   0.000025  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__restart_pods': 1.97}
+score:execution_disruption__restart_pods claude     Y     1640.0     446       22   0.001112  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__restart_pods': 2.0}
+score:execution_disruption__restart_pods jev        Y      304.3     618       24   0.000026  service=recommendations; error=p99 late…  {'execution_disruption__restart_pods': 1.05}
+score:execution_disruption__restart_pods claude     Y     1538.0     492       22   0.001204  service=recommendations; error=p99 late…  {'execution_disruption__restart_pods': 1.0}
+score:execution_disruption__restart_pods jev        Y      407.3     589       24   0.000025  service=orders-db; error=primary health…  {'execution_disruption__restart_pods': 2.73}
+score:execution_disruption__restart_pods claude     N        0.0       0        0   0.000000  service=orders-db; error=primary health…  {'error': 'StopIteration: '}
+score:execution_disruption__restart_pods jev        Y      401.9     593       24   0.000025  service=auth-svc; error=100% of new log…  {'execution_disruption__restart_pods': 2.63}
+score:execution_disruption__restart_pods claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': "JSONDecodeError: Expecting ',' delimiter: line 1 column 41 (char 40)"}
+score:execution_disruption__restart_pods jev        N      297.6     629       24   0.000026  service=payments-gateway; error=100% of…  {'execution_disruption__restart_pods': 2.88}
+score:execution_disruption__restart_pods claude     N     2875.6     496      185   0.002842  service=payments-gateway; error=100% of…  {'execution_disruption__restart_pods': 2.8}
+score:execution_disruption__restart_pods jev        Y      302.8     618       24   0.000026  service=api-gateway; error=tenants rece…  {'execution_disruption__restart_pods': 0.99}
+score:execution_disruption__restart_pods claude     Y     1640.3     490       22   0.001200  service=api-gateway; error=tenants rece…  {'execution_disruption__restart_pods': 1.0}
+score:execution_disruption__restart_pods jev        Y      279.3     595       24   0.000025  service=inventory-svc; error=stale pric…  {'execution_disruption__restart_pods': 1.74}
+score:execution_disruption__restart_pods claude     Y     2385.2     464      143   0.002358  service=inventory-svc; error=stale pric…  {'execution_disruption__restart_pods': 2.0}
+score:execution_disruption__restart_pods jev        Y      303.3     616       24   0.000026  service=multiple; error=only pods on no…  {'execution_disruption__restart_pods': 1.97}
+score:execution_disruption__restart_pods claude     Y     1742.1     495       22   0.001210  service=multiple; error=only pods on no…  {'execution_disruption__restart_pods': 2.0}
+score:execution_disruption__restart_pods jev        Y      407.5     610       24   0.000026  service=notifications-worker; error=que…  {'execution_disruption__restart_pods': 1.59}
+score:execution_disruption__restart_pods claude     N        0.0       0        0   0.000000  service=notifications-worker; error=que…  {'error': 'StopIteration: '}
+score:execution_disruption__scale_out jev        Y      292.0     567       23   0.000024  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__scale_out': 2.54}
+score:execution_disruption__scale_out claude     N        0.0       0        0   0.000000  service=checkout-api; error=HTTP 5xx 18…  {'error': 'JSONDecodeError: Unterminated string starting at: line 1 column 2 (char 1)'}
+score:execution_disruption__scale_out jev        Y      506.7     533       23   0.000022  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__scale_out': 2.81}
+score:execution_disruption__scale_out claude     Y     1538.5     386       19   0.000962  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__scale_out': 3}
+score:execution_disruption__scale_out jev        Y      509.3     566       23   0.000024  service=recommendations; error=p99 late…  {'execution_disruption__scale_out': 2.89}
+score:execution_disruption__scale_out claude     Y     1538.2     432       19   0.001054  service=recommendations; error=p99 late…  {'execution_disruption__scale_out': 3}
+score:execution_disruption__scale_out jev        Y      286.2     537       23   0.000023  service=orders-db; error=primary health…  {'execution_disruption__scale_out': 2.52}
+score:execution_disruption__scale_out claude     Y     1558.8     396       21   0.001002  service=orders-db; error=primary health…  {'execution_disruption__scale_out': 2.7}
+score:execution_disruption__scale_out jev        Y      426.4     541       23   0.000023  service=auth-svc; error=100% of new log…  {'execution_disruption__scale_out': 2.89}
+score:execution_disruption__scale_out claude     Y     1618.8     404       19   0.000998  service=auth-svc; error=100% of new log…  {'execution_disruption__scale_out': 3}
+score:execution_disruption__scale_out jev        Y      407.0     577       23   0.000024  service=payments-gateway; error=100% of…  {'execution_disruption__scale_out': 2.94}
+score:execution_disruption__scale_out claude     Y     1536.8     436       21   0.001082  service=payments-gateway; error=100% of…  {'execution_disruption__scale_out': 3.0}
+score:execution_disruption__scale_out jev        Y      511.4     566       23   0.000024  service=api-gateway; error=tenants rece…  {'execution_disruption__scale_out': 2.55}
+score:execution_disruption__scale_out claude     Y     1631.5     430       19   0.001050  service=api-gateway; error=tenants rece…  {'execution_disruption__scale_out': 3}
+score:execution_disruption__scale_out jev        Y      415.5     543       23   0.000023  service=inventory-svc; error=stale pric…  {'execution_disruption__scale_out': 2.91}
+score:execution_disruption__scale_out claude     Y     1640.6     404       19   0.000998  service=inventory-svc; error=stale pric…  {'execution_disruption__scale_out': 3}
+score:execution_disruption__scale_out jev        Y      407.4     564       23   0.000024  service=multiple; error=only pods on no…  {'execution_disruption__scale_out': 2.79}
+score:execution_disruption__scale_out claude     Y     1640.1     435       19   0.001060  service=multiple; error=only pods on no…  {'execution_disruption__scale_out': 3}
+score:execution_disruption__scale_out jev        Y      392.6     558       23   0.000023  service=notifications-worker; error=que…  {'execution_disruption__scale_out': 2.9}
+score:execution_disruption__scale_out claude     Y     1654.8     423       19   0.001036  service=notifications-worker; error=que…  {'execution_disruption__scale_out': 3}
+score:execution_disruption__increase_resource_limits jev        Y      406.7     575       24   0.000024  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__increase_resource_limits': 2.24}
+score:execution_disruption__increase_resource_limits claude     N        0.0       0        0   0.000000  service=checkout-api; error=HTTP 5xx 18…  {'error': 'JSONDecodeError: Unterminated string starting at: line 1 column 2 (char 1)'}
+score:execution_disruption__increase_resource_limits jev        Y      288.1     541       24   0.000023  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__increase_resource_limits': 2.03}
+score:execution_disruption__increase_resource_limits claude     Y     1727.5     390       25   0.001030  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__increase_resource_limits': 2.0}
+score:execution_disruption__increase_resource_limits jev        Y      269.1     574       24   0.000024  service=recommendations; error=p99 late…  {'execution_disruption__increase_resource_limits': 1.95}
+score:execution_disruption__increase_resource_limits claude     N        0.0       0        0   0.000000  service=recommendations; error=p99 late…  {'error': 'StopIteration: '}
+score:execution_disruption__increase_resource_limits jev        Y      325.5     545       24   0.000023  service=orders-db; error=primary health…  {'execution_disruption__increase_resource_limits': 2.55}
+score:execution_disruption__increase_resource_limits claude     N        0.0       0        0   0.000000  service=orders-db; error=primary health…  {'error': 'JSONDecodeError: Unterminated string starting at: line 1 column 2 (char 1)'}
+score:execution_disruption__increase_resource_limits jev        Y      418.6     549       24   0.000023  service=auth-svc; error=100% of new log…  {'execution_disruption__increase_resource_limits': 2.97}
+score:execution_disruption__increase_resource_limits claude     Y     2930.7     408      206   0.002876  service=auth-svc; error=100% of new log…  {'execution_disruption__increase_resource_limits': 3.0}
+score:execution_disruption__increase_resource_limits jev        N      272.7     585       24   0.000025  service=payments-gateway; error=100% of…  {'execution_disruption__increase_resource_limits': 2.8}
+score:execution_disruption__increase_resource_limits claude     N        0.0       0        0   0.000000  service=payments-gateway; error=100% of…  {'error': 'StopIteration: '}
+score:execution_disruption__increase_resource_limits jev        Y      319.0     574       24   0.000024  service=api-gateway; error=tenants rece…  {'execution_disruption__increase_resource_limits': 2.07}
+score:execution_disruption__increase_resource_limits claude     N        0.0       0        0   0.000000  service=api-gateway; error=tenants rece…  {'error': 'StopIteration: '}
+score:execution_disruption__increase_resource_limits jev        Y      281.9     551       24   0.000023  service=inventory-svc; error=stale pric…  {'execution_disruption__increase_resource_limits': 2.25}
+score:execution_disruption__increase_resource_limits claude     Y     2458.3     408      160   0.002416  service=inventory-svc; error=stale pric…  {'execution_disruption__increase_resource_limits': 2.0}
+score:execution_disruption__increase_resource_limits jev        Y      327.1     572       24   0.000024  service=multiple; error=only pods on no…  {'execution_disruption__increase_resource_limits': 2.25}
+score:execution_disruption__increase_resource_limits claude     Y     1537.6     439       25   0.001128  service=multiple; error=only pods on no…  {'execution_disruption__increase_resource_limits': 2.0}
+score:execution_disruption__increase_resource_limits jev        Y      413.6     566       24   0.000024  service=notifications-worker; error=que…  {'execution_disruption__increase_resource_limits': 2.28}
+score:execution_disruption__increase_resource_limits claude     Y     2899.8     427      225   0.003104  service=notifications-worker; error=que…  {'execution_disruption__increase_resource_limits': 2.0}
+score:execution_disruption__failover_db jev        Y      369.5     590       25   0.000025  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__failover_db': 1.01}
+score:execution_disruption__failover_db claude     Y     1603.9     450       21   0.001110  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__failover_db': 1.0}
+score:execution_disruption__failover_db jev        Y      444.2     556       25   0.000023  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__failover_db': 1.03}
+score:execution_disruption__failover_db claude     Y     1547.5     404       21   0.001018  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__failover_db': 1.0}
+score:execution_disruption__failover_db jev        Y      295.5     589       25   0.000025  service=recommendations; error=p99 late…  {'execution_disruption__failover_db': 1.01}
+score:execution_disruption__failover_db claude     Y     1685.6     450       21   0.001110  service=recommendations; error=p99 late…  {'execution_disruption__failover_db': 1.0}
+score:execution_disruption__failover_db jev        Y      362.2     560       25   0.000024  service=orders-db; error=primary health…  {'execution_disruption__failover_db': 2.55}
+score:execution_disruption__failover_db claude     Y     1608.7     414       21   0.001038  service=orders-db; error=primary health…  {'execution_disruption__failover_db': 2.9}
+score:execution_disruption__failover_db jev        Y      368.1     564       25   0.000024  service=auth-svc; error=100% of new log…  {'execution_disruption__failover_db': 1.09}
+score:execution_disruption__failover_db claude     Y     2436.8     422      134   0.002184  service=auth-svc; error=100% of new log…  {'execution_disruption__failover_db': 1.0}
+score:execution_disruption__failover_db jev        Y      331.4     600       25   0.000025  service=payments-gateway; error=100% of…  {'execution_disruption__failover_db': 1.02}
+score:execution_disruption__failover_db claude     Y     2836.5     454      153   0.002438  service=payments-gateway; error=100% of…  {'execution_disruption__failover_db': 1}
+score:execution_disruption__failover_db jev        Y      318.0     589       25   0.000025  service=api-gateway; error=tenants rece…  {'execution_disruption__failover_db': 1.02}
+score:execution_disruption__failover_db claude     Y     1625.9     448       21   0.001106  service=api-gateway; error=tenants rece…  {'execution_disruption__failover_db': 1.0}
+score:execution_disruption__failover_db jev        Y      376.8     566       25   0.000024  service=inventory-svc; error=stale pric…  {'execution_disruption__failover_db': 1.04}
+score:execution_disruption__failover_db claude     Y     2178.7     422      103   0.001874  service=inventory-svc; error=stale pric…  {'execution_disruption__failover_db': 1.0}
+score:execution_disruption__failover_db jev        Y      513.9     587       25   0.000025  service=multiple; error=only pods on no…  {'execution_disruption__failover_db': 1.02}
+score:execution_disruption__failover_db claude     Y     1568.6     453       21   0.001116  service=multiple; error=only pods on no…  {'execution_disruption__failover_db': 1.0}
+score:execution_disruption__failover_db jev        Y      383.0     581       25   0.000024  service=notifications-worker; error=que…  {'execution_disruption__failover_db': 1.03}
+score:execution_disruption__failover_db claude     Y     1982.8     441       73   0.001612  service=notifications-worker; error=que…  {'execution_disruption__failover_db': 1.0}
+score:execution_disruption__clear_cache jev        Y      466.0     594       23   0.000025  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__clear_cache': 2.11}
+score:execution_disruption__clear_cache claude     Y     3076.9     460      217   0.003090  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__clear_cache': 2.0}
+score:execution_disruption__clear_cache jev        Y      336.7     560       23   0.000024  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__clear_cache': 2.1}
+score:execution_disruption__clear_cache claude     Y     2820.1     414      170   0.002528  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__clear_cache': 2.0}
+score:execution_disruption__clear_cache jev        Y      334.9     593       23   0.000025  service=recommendations; error=p99 late…  {'execution_disruption__clear_cache': 0.99}
+score:execution_disruption__clear_cache claude     Y     1695.8     460       22   0.001140  service=recommendations; error=p99 late…  {'execution_disruption__clear_cache': 0.7}
+score:execution_disruption__clear_cache jev        Y      309.6     564       23   0.000024  service=orders-db; error=primary health…  {'execution_disruption__clear_cache': 2.3}
+score:execution_disruption__clear_cache claude     N        0.0       0        0   0.000000  service=orders-db; error=primary health…  {'error': 'StopIteration: '}
+score:execution_disruption__clear_cache jev        Y      328.8     568       23   0.000024  service=auth-svc; error=100% of new log…  {'execution_disruption__clear_cache': 1.98}
+score:execution_disruption__clear_cache claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': "JSONDecodeError: Expecting ',' delimiter: line 1 column 40 (char 39)"}
+score:execution_disruption__clear_cache jev        Y      297.7     604       23   0.000025  service=payments-gateway; error=100% of…  {'execution_disruption__clear_cache': 2.33}
+score:execution_disruption__clear_cache claude     Y     2877.0     464      194   0.002868  service=payments-gateway; error=100% of…  {'execution_disruption__clear_cache': 2.3}
+score:execution_disruption__clear_cache jev        Y      310.8     593       23   0.000025  service=api-gateway; error=tenants rece…  {'execution_disruption__clear_cache': 1.88}
+score:execution_disruption__clear_cache claude     N        0.0       0        0   0.000000  service=api-gateway; error=tenants rece…  {'error': 'JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)'}
+score:execution_disruption__clear_cache jev        Y      306.5     570       23   0.000024  service=inventory-svc; error=stale pric…  {'execution_disruption__clear_cache': 1.97}
+score:execution_disruption__clear_cache claude     Y     1473.6     432       22   0.001084  service=inventory-svc; error=stale pric…  {'execution_disruption__clear_cache': 2.0}
+score:execution_disruption__clear_cache jev        Y      259.9     591       23   0.000025  service=multiple; error=only pods on no…  {'execution_disruption__clear_cache': 2.13}
+score:execution_disruption__clear_cache claude     Y     1716.4     463       22   0.001146  service=multiple; error=only pods on no…  {'execution_disruption__clear_cache': 2.0}
+score:execution_disruption__clear_cache jev        Y      436.2     585       23   0.000025  service=notifications-worker; error=que…  {'execution_disruption__clear_cache': 2.95}
+score:execution_disruption__clear_cache claude     Y     1642.5     451       20   0.001102  service=notifications-worker; error=que…  {'execution_disruption__clear_cache': 3}
+score:execution_disruption__renew_certificate jev        N      404.6     593       23   0.000025  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__renew_certificate': 2.31}
+score:execution_disruption__renew_certificate claude     Y     1640.8     462       23   0.001154  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__renew_certificate': 2.7}
+score:execution_disruption__renew_certificate jev        N      407.6     559       23   0.000023  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__renew_certificate': 1.94}
+score:execution_disruption__renew_certificate claude     Y     1537.8     416       23   0.001062  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__renew_certificate': 2.5}
+score:execution_disruption__renew_certificate jev        N      291.7     592       23   0.000025  service=recommendations; error=p99 late…  {'execution_disruption__renew_certificate': 2.12}
+score:execution_disruption__renew_certificate claude     Y     1653.4     462       23   0.001154  service=recommendations; error=p99 late…  {'execution_disruption__renew_certificate': 2.7}
+score:execution_disruption__renew_certificate jev        Y      323.1     563       23   0.000024  service=orders-db; error=primary health…  {'execution_disruption__renew_certificate': 2.5}
+score:execution_disruption__renew_certificate claude     Y     1500.8     426       23   0.001082  service=orders-db; error=primary health…  {'execution_disruption__renew_certificate': 2.5}
+score:execution_disruption__renew_certificate jev        N      426.5     567       23   0.000024  service=auth-svc; error=100% of new log…  {'execution_disruption__renew_certificate': 2.03}
+score:execution_disruption__renew_certificate claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': 'StopIteration: '}
+score:execution_disruption__renew_certificate jev        Y      281.4     603       23   0.000025  service=payments-gateway; error=100% of…  {'execution_disruption__renew_certificate': 2.56}
+score:execution_disruption__renew_certificate claude     Y     1630.6     466       21   0.001142  service=payments-gateway; error=100% of…  {'execution_disruption__renew_certificate': 3}
+score:execution_disruption__renew_certificate jev        Y      293.2     592       23   0.000025  service=api-gateway; error=tenants rece…  {'execution_disruption__renew_certificate': 1.56}
+score:execution_disruption__renew_certificate claude     Y     1598.3     460       23   0.001150  service=api-gateway; error=tenants rece…  {'execution_disruption__renew_certificate': 2.5}
+score:execution_disruption__renew_certificate jev        N      389.0     569       23   0.000024  service=inventory-svc; error=stale pric…  {'execution_disruption__renew_certificate': 2.35}
+score:execution_disruption__renew_certificate claude     Y     1565.9     434       23   0.001098  service=inventory-svc; error=stale pric…  {'execution_disruption__renew_certificate': 2.9}
+score:execution_disruption__renew_certificate jev        N      379.3     590       23   0.000025  service=multiple; error=only pods on no…  {'execution_disruption__renew_certificate': 1.99}
+score:execution_disruption__renew_certificate claude     Y     1638.8     465       23   0.001160  service=multiple; error=only pods on no…  {'execution_disruption__renew_certificate': 2.7}
+score:execution_disruption__renew_certificate jev        N      408.7     584       23   0.000025  service=notifications-worker; error=que…  {'execution_disruption__renew_certificate': 2.28}
+score:execution_disruption__renew_certificate claude     Y     1559.5     453       23   0.001136  service=notifications-worker; error=que…  {'execution_disruption__renew_certificate': 2.8}
+score:execution_disruption__toggle_feature_flag jev        Y      385.3     599       24   0.000025  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__toggle_feature_flag': 2.83}
+score:execution_disruption__toggle_feature_flag claude     Y     1538.0     474       26   0.001208  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__toggle_feature_flag': 2.9}
+score:execution_disruption__toggle_feature_flag jev        Y      407.8     565       24   0.000024  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__toggle_feature_flag': 3.0}
+score:execution_disruption__toggle_feature_flag claude     Y     1493.8     428       24   0.001096  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__toggle_feature_flag': 3}
+score:execution_disruption__toggle_feature_flag jev        Y      348.8     598       24   0.000025  service=recommendations; error=p99 late…  {'execution_disruption__toggle_feature_flag': 2.01}
+score:execution_disruption__toggle_feature_flag claude     Y     2596.1     474      157   0.002518  service=recommendations; error=p99 late…  {'execution_disruption__toggle_feature_flag': 2.2}
+score:execution_disruption__toggle_feature_flag jev        Y      475.1     569       24   0.000024  service=orders-db; error=primary health…  {'execution_disruption__toggle_feature_flag': 2.87}
+score:execution_disruption__toggle_feature_flag claude     Y     1537.6     438       24   0.001116  service=orders-db; error=primary health…  {'execution_disruption__toggle_feature_flag': 3}
+score:execution_disruption__toggle_feature_flag jev        Y      283.3     573       24   0.000024  service=auth-svc; error=100% of new log…  {'execution_disruption__toggle_feature_flag': 2.85}
+score:execution_disruption__toggle_feature_flag claude     Y     1764.8     446       24   0.001132  service=auth-svc; error=100% of new log…  {'execution_disruption__toggle_feature_flag': 3}
+score:execution_disruption__toggle_feature_flag jev        Y      508.9     609       24   0.000026  service=payments-gateway; error=100% of…  {'execution_disruption__toggle_feature_flag': 2.72}
+score:execution_disruption__toggle_feature_flag claude     Y     2759.6     478      214   0.003096  service=payments-gateway; error=100% of…  {'execution_disruption__toggle_feature_flag': 3.0}
+score:execution_disruption__toggle_feature_flag jev        N      312.1     598       24   0.000025  service=api-gateway; error=tenants rece…  {'execution_disruption__toggle_feature_flag': 1.37}
+score:execution_disruption__toggle_feature_flag claude     Y     1381.1     472       26   0.001204  service=api-gateway; error=tenants rece…  {'execution_disruption__toggle_feature_flag': 2.0}
+score:execution_disruption__toggle_feature_flag jev        Y      290.9     575       24   0.000024  service=inventory-svc; error=stale pric…  {'execution_disruption__toggle_feature_flag': 2.64}
+score:execution_disruption__toggle_feature_flag claude     Y     1810.2     446       24   0.001132  service=inventory-svc; error=stale pric…  {'execution_disruption__toggle_feature_flag': 3}
+score:execution_disruption__toggle_feature_flag jev        Y      296.5     596       24   0.000025  service=multiple; error=only pods on no…  {'execution_disruption__toggle_feature_flag': 2.94}
+score:execution_disruption__toggle_feature_flag claude     Y     1649.8     477       24   0.001194  service=multiple; error=only pods on no…  {'execution_disruption__toggle_feature_flag': 3}
+score:execution_disruption__toggle_feature_flag jev        Y      312.1     590       24   0.000025  service=notifications-worker; error=que…  {'execution_disruption__toggle_feature_flag': 2.6}
+score:execution_disruption__toggle_feature_flag claude     Y     1632.9     465       26   0.001190  service=notifications-worker; error=que…  {'execution_disruption__toggle_feature_flag': 2.9}
+score:execution_disruption__throttle_traffic jev        Y      303.4     582       27   0.000024  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__throttle_traffic': 2.1}
+score:execution_disruption__throttle_traffic claude     Y     2976.2     441      230   0.003182  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__throttle_traffic': 2.0}
+score:execution_disruption__throttle_traffic jev        N      290.7     548       27   0.000023  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__throttle_traffic': 2.61}
+score:execution_disruption__throttle_traffic claude     Y     3189.7     395      225   0.003040  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__throttle_traffic': 2.0}
+score:execution_disruption__throttle_traffic jev        Y      405.5     581       27   0.000024  service=recommendations; error=p99 late…  {'execution_disruption__throttle_traffic': 2.0}
+score:execution_disruption__throttle_traffic claude     Y     1554.8     441       24   0.001122  service=recommendations; error=p99 late…  {'execution_disruption__throttle_traffic': 1.5}
+score:execution_disruption__throttle_traffic jev        Y      376.1     552       27   0.000023  service=orders-db; error=primary health…  {'execution_disruption__throttle_traffic': 2.56}
+score:execution_disruption__throttle_traffic claude     Y     1667.2     405       22   0.001030  service=orders-db; error=primary health…  {'execution_disruption__throttle_traffic': 3}
+score:execution_disruption__throttle_traffic jev        N      393.9     556       27   0.000023  service=auth-svc; error=100% of new log…  {'execution_disruption__throttle_traffic': 2.81}
+score:execution_disruption__throttle_traffic claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': 'StopIteration: '}
+score:execution_disruption__throttle_traffic jev        N      266.4     592       27   0.000025  service=payments-gateway; error=100% of…  {'execution_disruption__throttle_traffic': 2.51}
+score:execution_disruption__throttle_traffic claude     N        0.0       0        0   0.000000  service=payments-gateway; error=100% of…  {'error': 'StopIteration: '}
+score:execution_disruption__throttle_traffic jev        Y      401.4     581       27   0.000024  service=api-gateway; error=tenants rece…  {'execution_disruption__throttle_traffic': 2.75}
+score:execution_disruption__throttle_traffic claude     Y     1577.6     439       24   0.001118  service=api-gateway; error=tenants rece…  {'execution_disruption__throttle_traffic': 2.9}
+score:execution_disruption__throttle_traffic jev        Y      366.8     558       27   0.000023  service=inventory-svc; error=stale pric…  {'execution_disruption__throttle_traffic': 2.3}
+score:execution_disruption__throttle_traffic claude     Y     2767.6     413      180   0.002626  service=inventory-svc; error=stale pric…  {'execution_disruption__throttle_traffic': 2.0}
+score:execution_disruption__throttle_traffic jev        Y      406.7     579       27   0.000024  service=multiple; error=only pods on no…  {'execution_disruption__throttle_traffic': 2.2}
+score:execution_disruption__throttle_traffic claude     Y     1640.4     444       24   0.001128  service=multiple; error=only pods on no…  {'execution_disruption__throttle_traffic': 2.0}
+score:execution_disruption__throttle_traffic jev        Y      407.6     573       27   0.000024  service=notifications-worker; error=que…  {'execution_disruption__throttle_traffic': 1.99}
+score:execution_disruption__throttle_traffic claude     Y     2973.9     432      214   0.003004  service=notifications-worker; error=que…  {'execution_disruption__throttle_traffic': 2.5}
+score:execution_disruption__drain_node jev        Y      289.7     628       24   0.000026  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__drain_node': 2.0}
+score:execution_disruption__drain_node claude     Y     2644.5     500      145   0.002450  service=checkout-api; error=HTTP 5xx 18…  {'execution_disruption__drain_node': 2.0}
+score:execution_disruption__drain_node jev        Y      337.4     594       24   0.000025  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__drain_node': 2.0}
+score:execution_disruption__drain_node claude     Y     2769.3     454      180   0.002708  service=search-svc; error=5xx 6%; pods …  {'execution_disruption__drain_node': 2.0}
+score:execution_disruption__drain_node jev        Y      334.0     627       24   0.000026  service=recommendations; error=p99 late…  {'execution_disruption__drain_node': 1.03}
+score:execution_disruption__drain_node claude     Y     2737.1     500      163   0.002630  service=recommendations; error=p99 late…  {'execution_disruption__drain_node': 1.0}
+score:execution_disruption__drain_node jev        N      337.5     598       24   0.000025  service=orders-db; error=primary health…  {'execution_disruption__drain_node': 1.86}
+score:execution_disruption__drain_node claude     N        0.0       0        0   0.000000  service=orders-db; error=primary health…  {'error': 'StopIteration: '}
+score:execution_disruption__drain_node jev        N      371.6     602       24   0.000025  service=auth-svc; error=100% of new log…  {'execution_disruption__drain_node': 1.94}
+score:execution_disruption__drain_node claude     N        0.0       0        0   0.000000  service=auth-svc; error=100% of new log…  {'error': 'JSONDecodeError: Unterminated string starting at: line 1 column 2 (char 1)'}
+score:execution_disruption__drain_node jev        Y      407.2     638       24   0.000027  service=payments-gateway; error=100% of…  {'execution_disruption__drain_node': 2.34}
+score:execution_disruption__drain_node claude     N     3179.1     504      224   0.003248  service=payments-gateway; error=100% of…  {'execution_disruption__drain_node': 2.7}
+score:execution_disruption__drain_node jev        Y      269.8     627       24   0.000026  service=api-gateway; error=tenants rece…  {'execution_disruption__drain_node': 1.01}
+score:execution_disruption__drain_node claude     Y     2800.7     498      156   0.002556  service=api-gateway; error=tenants rece…  {'execution_disruption__drain_node': 1.0}
+score:execution_disruption__drain_node jev        Y      507.0     604       24   0.000025  service=inventory-svc; error=stale pric…  {'execution_disruption__drain_node': 1.74}
+score:execution_disruption__drain_node claude     Y     3151.1     472      224   0.003184  service=inventory-svc; error=stale pric…  {'execution_disruption__drain_node': 2.0}
+score:execution_disruption__drain_node jev        Y      331.3     625       24   0.000026  service=multiple; error=only pods on no…  {'execution_disruption__drain_node': 2.0}
+score:execution_disruption__drain_node claude     Y     1638.9     503       21   0.001216  service=multiple; error=only pods on no…  {'execution_disruption__drain_node': 2.0}
+score:execution_disruption__drain_node jev        N      383.6     619       24   0.000026  service=notifications-worker; error=que…  {'execution_disruption__drain_node': 1.16}
+score:execution_disruption__drain_node claude     N        0.0       0        0   0.000000  service=notifications-worker; error=que…  {'error': 'StopIteration: '}
+
+[score:degradation_impact__rollback_deploy]
+  jev    accuracy=80%  avg_latency_ms=335.2  avg_cost_usd=0.000031
+  claude accuracy=90%  avg_latency_ms=1717.0  avg_cost_usd=0.001722
+  -> jev is 5.1x faster, 56x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__restart_pods]
+  jev    accuracy=90%  avg_latency_ms=320.9  avg_cost_usd=0.000030
+  claude accuracy=40%  avg_latency_ms=1500.6  avg_cost_usd=0.001544
+  -> jev is 4.7x faster, 52x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__scale_out]
+  jev    accuracy=70%  avg_latency_ms=358.4  avg_cost_usd=0.000029
+  claude accuracy=80%  avg_latency_ms=1805.5  avg_cost_usd=0.001704
+  -> jev is 5.0x faster, 58x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__increase_resource_limits]
+  jev    accuracy=90%  avg_latency_ms=329.6  avg_cost_usd=0.000030
+  claude accuracy=70%  avg_latency_ms=1541.2  avg_cost_usd=0.001507
+  -> jev is 4.7x faster, 51x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__failover_db]
+  jev    accuracy=100%  avg_latency_ms=387.7  avg_cost_usd=0.000027
+  claude accuracy=100%  avg_latency_ms=1561.2  avg_cost_usd=0.001156
+  -> jev is 4.0x faster, 43x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__clear_cache]
+  jev    accuracy=80%  avg_latency_ms=380.0  avg_cost_usd=0.000029
+  claude accuracy=90%  avg_latency_ms=2189.5  avg_cost_usd=0.002126
+  -> jev is 5.8x faster, 72x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__renew_certificate]
+  jev    accuracy=90%  avg_latency_ms=364.4  avg_cost_usd=0.000026
+  claude accuracy=90%  avg_latency_ms=1383.3  avg_cost_usd=0.001035
+  -> jev is 3.8x faster, 41x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__toggle_feature_flag]
+  jev    accuracy=90%  avg_latency_ms=334.4  avg_cost_usd=0.000029
+  claude accuracy=80%  avg_latency_ms=1747.7  avg_cost_usd=0.001543
+  -> jev is 5.2x faster, 54x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__throttle_traffic]
+  jev    accuracy=100%  avg_latency_ms=363.0  avg_cost_usd=0.000028
+  claude accuracy=90%  avg_latency_ms=1745.6  avg_cost_usd=0.001506
+  -> jev is 4.8x faster, 53x cheaper than Claude Sonnet 5.5
+
+[score:degradation_impact__drain_node]
+  jev    accuracy=90%  avg_latency_ms=385.5  avg_cost_usd=0.000029
+  claude accuracy=90%  avg_latency_ms=1764.0  avg_cost_usd=0.001579
+  -> jev is 4.6x faster, 54x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__rollback_deploy]
+  jev    accuracy=70%  avg_latency_ms=356.4  avg_cost_usd=0.000029
+  claude accuracy=70%  avg_latency_ms=1107.6  avg_cost_usd=0.000937
+  -> jev is 3.1x faster, 33x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__restart_pods]
+  jev    accuracy=90%  avg_latency_ms=350.4  avg_cost_usd=0.000028
+  claude accuracy=90%  avg_latency_ms=1697.2  avg_cost_usd=0.001528
+  -> jev is 4.8x faster, 55x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__scale_out]
+  jev    accuracy=70%  avg_latency_ms=373.5  avg_cost_usd=0.000028
+  claude accuracy=80%  avg_latency_ms=1479.5  avg_cost_usd=0.001252
+  -> jev is 4.0x faster, 46x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__increase_resource_limits]
+  jev    accuracy=80%  avg_latency_ms=374.9  avg_cost_usd=0.000027
+  claude accuracy=80%  avg_latency_ms=1336.9  avg_cost_usd=0.000995
+  -> jev is 3.6x faster, 37x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__failover_db]
+  jev    accuracy=90%  avg_latency_ms=378.9  avg_cost_usd=0.000027
+  claude accuracy=100%  avg_latency_ms=1701.9  avg_cost_usd=0.001337
+  -> jev is 4.5x faster, 50x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__clear_cache]
+  jev    accuracy=100%  avg_latency_ms=395.0  avg_cost_usd=0.000027
+  claude accuracy=80%  avg_latency_ms=1313.7  avg_cost_usd=0.000929
+  -> jev is 3.3x faster, 35x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__renew_certificate]
+  jev    accuracy=100%  avg_latency_ms=401.3  avg_cost_usd=0.000026
+  claude accuracy=100%  avg_latency_ms=1564.5  avg_cost_usd=0.001208
+  -> jev is 3.9x faster, 46x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__toggle_feature_flag]
+  jev    accuracy=60%  avg_latency_ms=419.7  avg_cost_usd=0.000029
+  claude accuracy=50%  avg_latency_ms=1034.2  avg_cost_usd=0.000944
+  -> jev is 2.5x faster, 32x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__throttle_traffic]
+  jev    accuracy=90%  avg_latency_ms=391.7  avg_cost_usd=0.000027
+  claude accuracy=90%  avg_latency_ms=1483.6  avg_cost_usd=0.001133
+  -> jev is 3.8x faster, 41x cheaper than Claude Sonnet 5.5
+
+[score:time_to_recovery__drain_node]
+  jev    accuracy=80%  avg_latency_ms=406.7  avg_cost_usd=0.000027
+  claude accuracy=80%  avg_latency_ms=1461.0  avg_cost_usd=0.001071
+  -> jev is 3.6x faster, 40x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__rollback_deploy]
+  jev    accuracy=80%  avg_latency_ms=409.0  avg_cost_usd=0.000026
+  claude accuracy=80%  avg_latency_ms=1902.6  avg_cost_usd=0.001642
+  -> jev is 4.7x faster, 63x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__restart_pods]
+  jev    accuracy=90%  avg_latency_ms=349.1  avg_cost_usd=0.000026
+  claude accuracy=60%  avg_latency_ms=1338.4  avg_cost_usd=0.001113
+  -> jev is 3.8x faster, 44x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__scale_out]
+  jev    accuracy=100%  avg_latency_ms=415.5  avg_cost_usd=0.000023
+  claude accuracy=90%  avg_latency_ms=1435.8  avg_cost_usd=0.000924
+  -> jev is 3.5x faster, 40x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__increase_resource_limits]
+  jev    accuracy=90%  avg_latency_ms=332.3  avg_cost_usd=0.000024
+  claude accuracy=50%  avg_latency_ms=1155.4  avg_cost_usd=0.001055
+  -> jev is 3.5x faster, 45x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__failover_db]
+  jev    accuracy=100%  avg_latency_ms=376.3  avg_cost_usd=0.000024
+  claude accuracy=100%  avg_latency_ms=1907.5  avg_cost_usd=0.001461
+  -> jev is 5.1x faster, 60x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__clear_cache]
+  jev    accuracy=100%  avg_latency_ms=338.7  avg_cost_usd=0.000024
+  claude accuracy=70%  avg_latency_ms=1530.2  avg_cost_usd=0.001296
+  -> jev is 4.5x faster, 53x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__renew_certificate]
+  jev    accuracy=30%  avg_latency_ms=360.5  avg_cost_usd=0.000024
+  claude accuracy=90%  avg_latency_ms=1432.6  avg_cost_usd=0.001014
+  -> jev is 4.0x faster, 42x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__toggle_feature_flag]
+  jev    accuracy=90%  avg_latency_ms=362.1  avg_cost_usd=0.000025
+  claude accuracy=100%  avg_latency_ms=1816.4  avg_cost_usd=0.001489
+  -> jev is 5.0x faster, 60x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__throttle_traffic]
+  jev    accuracy=70%  avg_latency_ms=361.9  avg_cost_usd=0.000024
+  claude accuracy=80%  avg_latency_ms=1834.7  avg_cost_usd=0.001625
+  -> jev is 5.1x faster, 68x cheaper than Claude Sonnet 5.5
+
+[score:execution_disruption__drain_node]
+  jev    accuracy=70%  avg_latency_ms=356.9  avg_cost_usd=0.000026
+  claude accuracy=60%  avg_latency_ms=1892.1  avg_cost_usd=0.001799
+  -> jev is 5.3x faster, 70x cheaper than Claude Sonnet 5.5
+
+Summary (scored_ranking_updated.json): jev vs. Claude Sonnet 5.5
+
+┌──────────────────────────────────────────────────────┬─────────┬────────────┬─────────┬────────────┐
+│                         Task                         │ jev acc │ claude acc │ speedup │ cost ratio │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__rollback_deploy            │ 80%     │ 90%        │ 5.1x    │ 56x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__restart_pods               │ 90%     │ 40%        │ 4.7x    │ 52x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__scale_out                  │ 70%     │ 80%        │ 5.0x    │ 58x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__increase_resource_limits   │ 90%     │ 70%        │ 4.7x    │ 51x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__failover_db                │ 100%    │ 100%       │ 4.0x    │ 43x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__clear_cache                │ 80%     │ 90%        │ 5.8x    │ 72x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__renew_certificate          │ 90%     │ 90%        │ 3.8x    │ 41x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__toggle_feature_flag        │ 90%     │ 80%        │ 5.2x    │ 54x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__throttle_traffic           │ 100%    │ 90%        │ 4.8x    │ 53x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:degradation_impact__drain_node                 │ 90%     │ 90%        │ 4.6x    │ 54x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__rollback_deploy              │ 70%     │ 70%        │ 3.1x    │ 33x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__restart_pods                 │ 90%     │ 90%        │ 4.8x    │ 55x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__scale_out                    │ 70%     │ 80%        │ 4.0x    │ 46x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__increase_resource_limits     │ 80%     │ 80%        │ 3.6x    │ 37x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__failover_db                  │ 90%     │ 100%       │ 4.5x    │ 50x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__clear_cache                  │ 100%    │ 80%        │ 3.3x    │ 35x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__renew_certificate            │ 100%    │ 100%       │ 3.9x    │ 46x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__toggle_feature_flag          │ 60%     │ 50%        │ 2.5x    │ 32x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__throttle_traffic             │ 90%     │ 90%        │ 3.8x    │ 41x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:time_to_recovery__drain_node                   │ 80%     │ 80%        │ 3.6x    │ 40x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__rollback_deploy          │ 80%     │ 80%        │ 4.7x    │ 63x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__restart_pods             │ 90%     │ 60%        │ 3.8x    │ 44x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__scale_out                │ 100%    │ 90%        │ 3.5x    │ 40x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__increase_resource_limits │ 90%     │ 50%        │ 3.5x    │ 45x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__failover_db              │ 100%    │ 100%       │ 5.1x    │ 60x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__clear_cache              │ 100%    │ 70%        │ 4.5x    │ 53x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__renew_certificate        │ 30%     │ 90%        │ 4.0x    │ 42x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__toggle_feature_flag      │ 90%     │ 100%       │ 5.0x    │ 60x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__throttle_traffic         │ 70%     │ 80%        │ 5.1x    │ 68x        │
+├──────────────────────────────────────────────────────┼─────────┼────────────┼─────────┼────────────┤
+│ score:execution_disruption__drain_node               │ 70%     │ 60%        │ 5.3x    │ 70x        │
+└──────────────────────────────────────────────────────┴─────────┴────────────┴─────────┴────────────┘
