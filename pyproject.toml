@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "explore jev"
+version = "0.1.0"
+description = "Explore Jev"
+authors = ["Satyendra Kumar Banjare"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typesafe-sdk = { version = "*", optional = true }
+anthropic = { version = "*", optional = true }
+python-dotenv = "*"
+
+[tool.poetry.extras]
+jev = ["typesafe-sdk"]
+benchmark = ["typesafe-sdk", "anthropic"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
